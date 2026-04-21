@@ -14,6 +14,12 @@ Teczka 777 opiera się wyłącznie na materiale [P].
 - jeżeli istnieje sygnatura, wpisuj ją w rejestrze i uwagach
 - jeżeli plik pochodzi ze skanu własnego, nie gub informacji o oryginalnym nośniku
 
+## Standard metadanych
+- nazwa pliku pozostaje krótka i techniczna
+- metadane zapisuj wyłącznie w osobnym pliku `.meta.md`
+- nie zapisuj metadanych w nazwie pliku
+- dla jednego pliku źródłowego twórz jeden odpowiadający mu plik metadanych, np. `1945-09-28_rozkaz_wloclawek_jan_baczynski.pdf.meta.md`
+
 ## Nazewnictwo plików
 - używaj małych liter
 - używaj podkreśleń zamiast spacji
