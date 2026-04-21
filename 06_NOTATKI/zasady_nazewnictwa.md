@@ -37,8 +37,23 @@ Teczka 777 opiera się wyłącznie na materiale [P].
 - brak_daty_notatka_ceremonialna_marszalek.jpg
 
 ## Zasady rejestru T777
-Kolumny rejestru:
-ID | data_okres | osoba | zdarzenie | miejsce | zrodlo | sygnatura | typ_zrodla | status_dowodu | znaczenie | uwagi
+Aktualny roboczy układ kolumn w `05_T777/rejestr_t777.csv`:
+
+`ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA`
+
+Znaczenie kolumn:
+- `ID` = unikalny identyfikator rekordu, np. `T777_001`
+- `DATA_ISO` = data w formacie `RRRRMMDD`, a przy dacie niepełnej zapis techniczny z zerami na nieznanych pozycjach, np. `19450000`
+- `TYP` = typ nośnika lub typu dokumentu, np. `FOTO`, `DOK`, `DYPLOM`, `AKT_ZGONU`
+- `OPIS_KRÓTKI` = krótki opis jednego konkretnego faktu lub nośnika
+- `MIEJSCE` = miejsce zdarzenia, wystawienia lub identyfikacji dokumentu
+- `STATUS_DOWODOWY` = obecnie używany znacznik klasy materiału, dla T777 zasadniczo `[P]`
+- `POWIĄZANIA` = identyfikatory rekordów lub pakietów powiązanych rzeczowo
+
+## Uwaga rozwojowa
+Docelowo rejestr może zostać rozszerzony o pola:
+`OSOBA;ŹRÓDŁO;SYGNATURA;UWAGI`
+ale dopiero po zachowaniu zgodności całego dotychczasowego wsadu.
 
 ## Zasady metodologiczne
 - nie mieszaj [P] z [I], [R] i [H]
