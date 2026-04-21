@@ -1,11 +1,11 @@
-ID,data_okres,osoba,zdarzenie,miejsce,zrodlo,sygnatura,typ_zrodla,status_dowodu,znaczenie,uwagi
-T777_001,1945-10-04,Jan Baczynski s. Michala / grupa zolnierzy,fotografia grupowa 5 umundurowanych mezczyzn,Wloclawek,zespol wojskowy Jana Baczynskiego,brak,fotografia,potwierdzone,czesc pakietu wojskowego 1945-1946,powiazania: T777_002; T777_004; identyfikacja konkretnej sylwetki nadal otwarta
-T777_002,1945-09-28,Jan Baczynski s. Michala,rozkaz wojskowy dotyczacy chor. Jana Baczynskiego,Wloclawek,WBH/CAW,III-311-17,kopia archiwalna dokumentu wojskowego,potwierdzone,bezposredni dowod sluzby i przydzialu,powiazania: T777_001; T777_005
-T777_003,1946-05-09,Jan Baczynski s. Michala,dyplom MON Medal Zwyciestwa i Wolnosci nr 024480,Warszawa,dokument fizyczny / zespol wojskowy,nr 024480,dyplom urzedowy,potwierdzone,mocny dokument identyfikacyjny i biograficzny,powiazania: T777_002; T777_005
-T777_004,1945-10-04,zespol fotografii wojskowej Jana Baczynskiego,rewers fotografii z data i adnotacja o Wloclawku,Wloclawek,rewers fotografii,brak,rewers/opis nosnika,potwierdzone,lacznik czasowo-miejscowy dla fotografii,powiazania: T777_001
-T777_005,1945,Jan Baczynski s. Michala,materialy WBH/CAW dotyczace akt wojskowych Jana Baczynskiego,Warszawa,WBH/CAW,III-427-23,karta/wykaz archiwalny,potwierdzone,potwierdza istnienie wojskowego zespolu archiwalnego,powiazania: T777_002; T777_003
-T777_006,1982-05-12,Jan Stanislaw Baczynski,odpis aktu zgonu Jana Stanislawa Baczynskiego,Pila,do uzupelnienia,do uzupelnienia,akt zgonu,do weryfikacji nosnika,krytyczne dla osi smierci 1982,roboczo: L007; L008
-T777_007,1980-12-03,Jan Stanislaw Baczynski / ChZPiP,pismo NSZZ Solidarnosc z 17 zarzutami,Chodziez,do uzupelnienia,do uzupelnienia,pismo/zarzuty,do weryfikacji nosnika,kluczowe dla osi konfliktu instytucjonalnego,roboczo: K001-K006
-T777_008,1971-03-20,Jan Baczynski,notatka dotyczaca delegacji angielskiej i Fiata PA 0454,Chodziez,do uzupelnienia,do uzupelnienia,notatka,do weryfikacji nosnika,wazne dla osi funkcji dyrektorskiej i samochodu sluzbowego,wymaga wskazania konkretnego pliku zrodlowego
-T777_009,1975-01-13,Jan Baczynski,wniosek o limit 1000 km na samochod prywatny,Chodziez,do uzupelnienia,do uzupelnienia,wniosek,do weryfikacji nosnika,wazne dla osi uzytkowania auta do celow sluzbowych,wymaga dopiecia nosnika
-T777_010,1976-12-28,Jan Baczynski,ponowny wniosek o limit kilometrow dla dyrektora,Chodziez,do uzupelnienia,do uzupelnienia,wniosek,do weryfikacji nosnika,ciag dalszy osi samochodowo-sluzbowej,wymaga dopiecia nosnika
+ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA
+T777_001;19451004;FOTO;Fotografia grupowa (5 osób w mundurach);Włocławek;[P];T777_002, T777_004
+T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;[P];T777_001, T777_005
+T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005
+T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001
+T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003
+T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008
+T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006
+T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];Teczka_777_pdf
+T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008
+T777_010;19761228;WNIOSEK;Ponowny wniosek o limit km dla dyrektora;Chodzież;[P];T777_009
