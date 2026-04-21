@@ -1,51 +1,24 @@
-ID,data_okres,osoba,zdarzenie,miejsce,zrodlo,sygnatura,typ_zrodla,status_dowodu,znaczenie,uwagi_robocze
-1,,Jan Baczyński,pełnienie funkcji dyrektora,Chodzież,"Zaproszenie Komendy i Rady Naukowej Wyższej Oficerskiej Szkoły Samochodowej im. gen. A. Waszkiewicza; dokument wskazuje: Dyrektor Zakładów Porcelany i Porcelitu ""Chodzież""",,P,potwierdzone,identyfikacja osoby,brak czytelnej daty na użytym skanie
-2,,Jan Baczyński,otrzymanie zaproszenia na trybunę,,Zaproszenie Komendy i Rady Naukowej Wyższej Oficerskiej Szkoły Samochodowej im. gen. A. Waszkiewicza; adresat: Tow. Jan Baczyński,,P,potwierdzone,ciąg dowodowy,brak czytelnej daty na użytym skanie
-3,,Jan Baczyński,odznaczenie orderem,,"Pismo gratulacyjne; w treści czytelny fragment: ""gratuluję z okazji odznaczenia orderem"" oraz ""Jan Baczyński""",,P,potwierdzone,ciąg dowodowy,brak czytelnej nazwy orderu i daty na użytym skanie
-4,,Jan Baczyński,obecność biletu lub karty wstępu związanej z zaproszeniem na trybunę,,"Dyplomy cz.2.pdf, s.1; obiekt widoczny obok zaproszenia WOSS im. gen. A. Waszkiewicza",,P,potwierdzone_czesciowo,identyfikacja nośnika,wymaga pełnego odczytu treści i daty
-5,,Jan Baczyński,posługiwanie się wizytówką służbową dyrektora,Chodzież,"Dyplomy cz.2.pdf, s.1; wizytówka: Dyrektor Zakładów Porcelany i Porcelitu ""Chodzież""",,P,potwierdzone,identyfikacja funkcji,wizytówka widoczna na skanie
-6,,Jan Baczyński,posługiwanie się wizytówką zakładową z adresem ul. Łąkowa 2 i numerem telefonu 147,Chodzież,"Dyplomy cz.2.pdf, s.1; wizytówka zakładowa z danymi kontaktowymi",,P,potwierdzone_czesciowo,identyfikacja instytucjonalna,telex wymaga pełnego odczytu
-7,1973,Jan Baczyński,"otrzymanie zaproszenia na ""Dzień Budowlanych 1973""",,"Dyplomy cz.2.pdf, s.3; druk ""Dzień Budowlanych 1973 - Zaproszenie""",,P,potwierdzone_czesciowo,powiązania środowiskowe,wymaga pełnego odczytu organizatora i adresata
-8,,Jan Baczyński,otrzymanie zaproszenia Uniwersytetu im. Adama Mickiewicza,Poznań,"Dyplomy cz.2.pdf, s.3; druk: Uniwersytet im. Adama Mickiewicza w Poznaniu, Wydział Matematyki Fizyki Chemii, kierunek matematyka",,P,potwierdzone_czesciowo,powiązania instytucjonalne,wymaga ustalenia okazji i daty
-9,1972-09-28,Jan Baczyński,otrzymanie listu z Tušimic,Tušimice / Chodzież,"Dyplomy cz.2.pdf, s.6; rękopis datowany ""28.9.72""",,P,potwierdzone_czesciowo,korespondencja,treść wymaga transkrypcji
-10,1972-09-28,Jan Baczyński,zachowanie drugiej strony listu z Tušimic,Tušimice / Chodzież,"Dyplomy cz.2.pdf, s.7; druga strona rękopisu z listu datowanego ""28.9.72""",,P,potwierdzone_czesciowo,korespondencja,treść wymaga transkrypcji
-11,1972-09,Jan Baczyński,otrzymanie koperty adresowanej do zakładów porcelany i porcelitu w Chodzieży,Chodzież,"Dyplomy cz.2.pdf, s.8; koperta adresowana do Chodzieskich Zakładów Porcelany i Porcelitu",,P,potwierdzone_czesciowo,ciąg korespondencyjny,stempel pocztowy wymaga pełnego odczytu
-12,1972-12-11,Jan Baczyński,otrzymanie koperty od Norton Industrial Ceramic Division Europe,Conflans-Sainte-Honorine / Chodzież,"Dyplomy cz.2.pdf, s.10; koperta do ""Mr. BACZYNSKI Jan, Directeur General, Usine de Porcelaine, Chodziez, Pologne""",,P,potwierdzone,korespondencja zagraniczna,data 11.12.72 czytelna na kopercie
-13,1972-12,Jan Baczyński,otrzymanie kartki świątecznej od Norton Industrial Ceramic Division Europe,Conflans-Sainte-Honorine / Chodzież,"Dyplomy cz.2.pdf, s.9; kartka z życzeniami bożonarodzeniowymi i noworocznymi",,P,potwierdzone,korespondencja zagraniczna,nadawca czytelny, podpisy wymagają odczytu
-14,,Jan Baczyński,otrzymanie telegramu gratulacyjnego od Franciszkiewicza z okazji odznaczenia orderem,,"Dyplomy cz.2.pdf, s.5; telegram z frazą ""serdeczne gratulacje z okazji odznaczenia ... przesyła Franciszkiewicz""",,P,potwierdzone_czesciowo,ciąg dowodowy,nazwa orderu wymaga pełnego odczytu
-15,,Jan Baczyński,zachowanie awersu lub powtórnego skanu zaproszenia WOSS im. gen. A. Waszkiewicza w zbiorze,,Dyplomy cz.2.pdf, s.2,,P,potwierdzone_czesciowo,kontrola duplikatu,wymaga ustalenia czy to awers, rewers czy duplikat
-16,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.11,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-17,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.12,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-18,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.13,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-19,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.14,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-20,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.15,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-21,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.16,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-22,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.17,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-23,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.18,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-24,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.19,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-25,,Jan Baczyński,obecność dokumentu pamiątkowego lub korespondencyjnego w pakiecie dyplomów,,Dyplomy cz.2.pdf, s.20,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia po pełnym odczycie strony
-26,,Jan Baczyński,"obecność wycinka prasowego ""Scementowana krwią"" w archiwum",,TapScanner-21-04-2026.pdf, s.1,,P,potwierdzone,materiał prasowy z epoki,widoczny tytuł wycinka
-27,,Jan Baczyński,obecność wycinka prasowego o polskich żołnierzach walczących na froncie wschodnim,,TapScanner-21-04-2026.pdf, s.2,,P,potwierdzone_czesciowo,materiał prasowy z epoki,pełny tytuł wymaga odczytu
-28,1943-10-11,Jan Baczyński,"obecność wycinka ""Z rozkazu do żołnierzy I Dywizji"" w archiwum",,TapScanner-21-04-2026.pdf, s.3,,P,potwierdzone,materiał prasowy wojenny,na skanie czytelna data 11 października 1943 r.
-29,,Jan Baczyński,obecność kolejnego wycinka prasowego wojennego w zbiorze,,TapScanner-21-04-2026.pdf, s.4,,P,do_odczytu,inwentarz nośników,strona wymaga osobnego odczytu
-30,,Jan Baczyński,obecność zestawu wycinków prasowych dotyczących I Dywizji i ZPP,,TapScanner-21-04-2026.pdf, s.5,,P,potwierdzone_czesciowo,materiał prasowy wojenny,na stronie widoczne złożone wycinki
-31,,Jan Baczyński,obecność wycinka prasowego z epoki w zbiorze,,TapScanner-21-04-2026.pdf, s.6,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia
-32,,Jan Baczyński,obecność fotografii lub ilustracji prasowej w zbiorze,,TapScanner-21-04-2026.pdf, s.7,,P,do_odczytu,inwentarz nośników,na stronie widoczny materiał ilustracyjny
-33,,Jan Baczyński,obecność wycinka prasowego z epoki w zbiorze,,TapScanner-21-04-2026.pdf, s.8,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia
-34,,Jan Baczyński,obecność wycinka prasowego z epoki w zbiorze,,TapScanner-21-04-2026.pdf, s.9,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia
-35,,Jan Baczyński,obecność wycinka prasowego z epoki w zbiorze,,TapScanner-21-04-2026.pdf, s.10,,P,do_odczytu,inwentarz nośników,opis minimalny do uzupełnienia
-36,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.1,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-37,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.2,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-38,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.3,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-39,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.4,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-40,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.5,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-41,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.6,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-42,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.7,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-43,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.8,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-44,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.9,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-45,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.10,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-46,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.11,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-47,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.12,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-48,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.13,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-49,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.14,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
-50,,,obecność skanu dokumentu w pakiecie dokumentowym,,split_Dokumenty_Baczyńscy_-2_1-49.pdf, s.15,,P,do_odczytu,inwentarz nośników,rekord otwarty pod pełny opis strony
+ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA
+T777_001;19451004;FOTO;Fotografia grupowa (5 osób w mundurach);Włocławek;[P];T777_002, T777_004
+T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;[P];T777_001, T777_005
+T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005, T777_019
+T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001
+T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003
+T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008
+T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006
+T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];T777_009, T777_010
+T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008, T777_010
+T777_010;19761228;WNIOSEK;Ponowny wniosek o limit km dla dyrektora;Chodzież;[P];T777_008, T777_009
+T777_011;00000000;ZAPROSZENIE;Zaproszenie WOSS im. gen. A. Waszkiewicza dla Jana Baczyńskiego, dyrektora Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_012, T777_013
+T777_012;00000000;WIZYTOWKA;Wizytówka służbowa: Dyrektor Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_011, T777_013
+T777_013;00000000;WIZYTOWKA;Wizytówka zakładowa z adresem ul. Łąkowa 2 i numerem telefonu 147;Chodzież;[P];T777_011, T777_012
+T777_014;19730000;ZAPROSZENIE;Zaproszenie Dzień Budowlanych 1973;;[P];
+T777_015;19720928;LIST;List odręczny z Tušimic datowany 28.09.1972;Tušimice;[P];T777_016
+T777_016;19720900;KOPERTA;Koperta adresowana do Chodzieskich Zakładów Porcelany i Porcelitu;Chodzież;[P];T777_015
+T777_017;19721211;KOPERTA;Koperta od Norton Industrial Ceramic Division Europe do Jana Baczyńskiego, dyrektora generalnego;Conflans-Sainte-Honorine;[P];T777_018
+T777_018;19721200;KARTKA;Kartka świąteczna od Norton Industrial Ceramic Division Europe;Conflans-Sainte-Honorine;[P];T777_017
+T777_019;00000000;TELEGRAM;Telegram gratulacyjny od Franciszkiewicza z okazji odznaczenia orderem;;[P];T777_003
+T777_020;00000000;PRASA;Wycinek prasowy Scementowana krwią;;[P];T777_021, T777_022
+T777_021;19431011;PRASA;Wycinek prasowy Z rozkazu do żołnierzy I Dywizji;;[P];T777_020, T777_022
+T777_022;00000000;PRASA;Wycinek prasowy o polskich żołnierzach walczących na froncie wschodnim;;[P];T777_020, T777_021
+T777_023;00000000;PRASA;Zestaw wycinków prasowych dotyczących I Dywizji i ZPP;;[P];T777_020, T777_021, T777_022
