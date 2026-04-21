@@ -1,11 +1,4 @@
-ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA
-T777_001;19451004;FOTO;Fotografia grupowa (5 osób w mundurach);Włocławek;[P];T777_002, T777_004
-T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;[P];T777_001, T777_005
-T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005
-T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001
-T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003
-T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008
-T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006
-T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];Teczka_777_pdf
-T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008
-T777_010;19761228;WNIOSEK;Ponowny wniosek o limit km dla dyrektora;Chodzież;[P];T777_009
+ID,data_okres,osoba,zdarzenie,miejsce,zrodlo,sygnatura,typ_zrodla,status_dowodu,znaczenie,uwagi_robocze
+1,,Jan Baczyński,pełnienie funkcji dyrektora,Chodzież,"Zaproszenie Komendy i Rady Naukowej Wyższej Oficerskiej Szkoły Samochodowej im. gen. A. Waszkiewicza; dokument wskazuje: Dyrektor Zakładów Porcelany i Porcelitu \"Chodzież\"",,P,potwierdzone,identyfikacja osoby,"brak czytelnej daty na użytym skanie"
+2,,Jan Baczyński,otrzymanie zaproszenia na trybunę,,"Zaproszenie Komendy i Rady Naukowej Wyższej Oficerskiej Szkoły Samochodowej im. gen. A. Waszkiewicza; adresat: Tow. Jan Baczyński",,P,potwierdzone,ciąg dowodowy,"brak czytelnej daty na użytym skanie"
+3,,Jan Baczyński,odznaczenie orderem,,"Pismo gratulacyjne; w treści czytelny fragment: \"gratuluję z okazji odznaczenia orderem\" oraz \"Jan Baczyński\"",,P,potwierdzone,ciąg dowodowy,"brak czytelnej nazwy orderu i daty na użytym skanie"
