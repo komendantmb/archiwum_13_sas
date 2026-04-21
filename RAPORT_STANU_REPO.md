@@ -37,20 +37,30 @@ Przyjęty standard metadanych:
 - `2026-04-21_stan_startowy.md`
 - `braki_startowe.md`
 - `zasady_nazewnictwa.md`
+- `rejestr_zrodel_master.csv`
 
-## 3. Braki blokujące pełną procedurę
-- brak rzeczywistych plików źródłowych [P] w `01_P`
-- brak rekordów w `05_T777/rejestr_t777.csv`
+## 3. Stan T777
+Plik `05_T777/rejestr_t777.csv` nie jest pusty. Repo zawiera pierwszy pakiet rekordów [P].
+
+Na dzień audytu rejestr obejmuje rekordy 1-50 i odwołuje się do następujących kontenerów źródłowych:
+- `Dyplomy cz.2.pdf`
+- `TapScanner-21-04-2026.pdf`
+- `split_Dokumenty_Baczyńscy_-2_1-49.pdf`
+
+## 4. Braki blokujące pełną procedurę
+- brak potwierdzonego importu rzeczywistych plików źródłowych [P] do `01_P`
+- nie potwierdzono obecności w repo binarnych plików źródłowych cytowanych w T777
 - brak chronologii źródłowej
 - brak indeksu osób z materiału [P]
+- część rekordów T777 pozostaje na poziomie inwentarzowym `do_odczytu`
 
-## 4. Gotowość do zasilenia T777
-Plik `05_T777/rejestr_t777.csv` istnieje i zawiera wyłącznie nagłówek.
+## 5. Gotowość do zasilenia T777
+T777 jest gotowa strukturalnie i została już częściowo zasilona rekordami [P], ale repo nadal nie zawiera potwierdzonego korpusu plików źródłowych w `01_P`.
 
-T777 gotowa strukturalnie, jeszcze niezasilona rekordami [P].
+## 6. Wykonane porządki
+- skorygowano notatki repo, które błędnie opisywały T777 jako pustą
+- założono osobny rejestr źródeł rozpoznanych na podstawie aktualnych wpisów T777
+- rozdzielono stan logiczny repo od stanu faktycznego importu źródeł
 
-## 5. Rekomendowana następna czynność
-Import materiału [P] do `01_P`.
-
-## Uwaga techniczna o wykonanych zmianach
-Nie tworzono plików `00_placeholder.md` w `01_P`, `02_I`, `03_R`, `04_H`, ponieważ każdy z tych katalogów ma już co najmniej jeden plik śledzony przez Git (`.gitkeep`).
+## 7. Rekomendowana następna czynność
+Fizyczny import plików źródłowych [P] do `01_P`, zgodnie z nazwami i obiektami ujętymi w `06_NOTATKI/rejestr_zrodel_master.csv`.
