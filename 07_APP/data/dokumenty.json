@@ -1,0 +1,32 @@
+[
+  {
+    "id": "DOC-GW-1978-0039",
+    "tytul": "Gazeta Wydanie AB 0039",
+    "rok": "1978",
+    "warstwa": "P",
+    "typ": "dokument drukowany",
+    "opis": "Material prasowy powiazany z okresem dzialalnosci Jana Stanislawa Baczynskiego.",
+    "osoby": ["OSOBA-JSB-1926"],
+    "plik": "01_P/GW_1978_Wyd.AB_0039.pdf"
+  },
+  {
+    "id": "DOC-CZARNO-BIALE",
+    "tytul": "Pakiet fotografii czarno-bialych",
+    "rok": "brak",
+    "warstwa": "02_I",
+    "typ": "fotografie",
+    "opis": "Zbior fotografii rodzinnych i mundurowych wymagajacy rozbioru.",
+    "osoby": ["OSOBA-JSB-1926", "OSOBA-MB-1896"],
+    "plik": "02_I/Czarno-biale.pdf"
+  },
+  {
+    "id": "DOC-WIELKOPOLSKI-STOL",
+    "tytul": "Wielkopolski Stol",
+    "rok": "brak",
+    "warstwa": "02_I",
+    "typ": "zestaw fotograficzny",
+    "opis": "Plansza zbiorcza dokumentow i zdjec rozlozonych na stole.",
+    "osoby": ["OSOBA-JSB-1926", "OSOBA-MB-1896"],
+    "plik": "02_I/Wielkopolski Stol .pdf"
+  }
+]
