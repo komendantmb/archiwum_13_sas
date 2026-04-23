@@ -1,0 +1,26 @@
+kolekcja;nr_strony_po_rozbiciu;stary_plik;nowy_plik;opis_roboczy;kategoria;pewnosc_nazwania;rdzen_P;grupa_duplikatow_prawdopodobnych;uwagi
+GAZ;2;Gazety plakaty_p002.pdf;GAZ_002_rozkaz_wojskowy_wloclawek_22_04_1945.pdf;rozkaz wojskowy, Wloclawek, 22 IV 1945;dokument_wojskowy;wysoka;TAK;;kluczowy dokument
+GAZ;3;Gazety plakaty_p003.pdf;GAZ_003_fotografia_pieciu_zolnierzy.pdf;fotografia pieciu zolnierzy;fotografia_wojskowa;wysoka;TAK;;
+GAZ;5;Gazety plakaty_p005.pdf;GAZ_005_dziennik_popularny_11_02_1937_cala_strona.pdf;Dziennik Popularny, 11 II 1937, cala strona;prasa;wysoka;TAK;;
+GAZ;9;Gazety plakaty_p009.pdf;GAZ_009_wolna_polska_kosciuszkowcy_w_pierwszym_boju.pdf;Wolna Polska: Kosciuszkowcy w pierwszym boju;prasa_wojenna;wysoka;TAK;;
+GAZ;10;Gazety plakaty_p010.pdf;GAZ_010_z_rozkazu_do_zolnierzy_I_dywizji_11_10_1943.pdf;Wolna Polska: Z rozkazu do zolnierzy I Dywizji, 11 X 1943;prasa_wojenna;wysoka;TAK;;
+GAZ;13;Gazety plakaty_p013.pdf;GAZ_013_kc_ppr_huty_dabrowskie_zobowiazania_kongresowe.pdf;KC-PPR / Huty Dabrowskie - zobowiazania kongresowe;plakat_lub_wykres;wysoka;TAK;;
+GAZ;15;Gazety plakaty_p015.pdf;GAZ_015_plakat_kongres_jednosci_klasy_robotniczej_08_12_1948.pdf;plakat: Kongres Jednosci Klasy Robotniczej, 8 XII 1948;plakat;wysoka;TAK;;
+GAZ;16;Gazety plakaty_p016.pdf;GAZ_016_wbh_caw_baczynski_jan_III_427_23.pdf;WBH/CAW: Baczynski Jan, III-427-23;kwerenda_archiwalna;wysoka;TAK;;kluczowy nośnik identyfikacyjny
+GAZ;17;Gazety plakaty_p017.pdf;GAZ_017_dyplom_mon_medal_zwyciestwa_i_wolnosci_1946.pdf;Dyplom MON: Medal Zwyciestwa i Wolnosci, 1946;dyplom;wysoka;TAK;;kluczowy dokument
+GAZ;18;Gazety plakaty_p018.pdf;GAZ_018_wolna_polska_scementowana_krwia.pdf;Wolna Polska: Scementowana krwia;prasa_wojenna;wysoka;TAK;;
+GAZ;19;Gazety plakaty_p019.pdf;GAZ_019_notatka_rekopis_spis_przedmiotow.pdf;notatka odreczna / spis przedmiotow;notatka_rekopis;wysoka;TAK;;
+GAZ;20;Gazety plakaty_p020.pdf;GAZ_020_banknot_100_marek_z_notatkami.pdf;banknot 100 marek z odrecznymi notatkami;pamietka_lub_notatka;wysoka;TAK;;
+ZDJ;1;Zdjęcia komplety urzędnik nauczyciel żołnierz _p001.pdf;ZDJ_001_album_sheet_group_photos_A.pdf;album: zbior fotografii grupowych;fotografia_albumowa;wysoka;TAK;;
+ZDJ;4;Zdjęcia komplety urzędnik nauczyciel żołnierz _p004.pdf;ZDJ_004_reverses_colonia_policyjna_1935.pdf;rewersy: 'Pamiatka z kolonii policyjnej z 1935 r.';rewers_fotografii;wysoka;TAK;;kluczowy napis identyfikacyjny
+ZDJ;5;Zdjęcia komplety urzędnik nauczyciel żołnierz _p005.pdf;ZDJ_005_album_atlases_and_photos_wide.pdf;album z atlasami szkolnymi i fotografiami, szeroki kadr;material_szkolny_i_fotograficzny;wysoka;TAK;ZDJ_DUP_01;
+ZDJ;8;Zdjęcia komplety urzędnik nauczyciel żołnierz _p008.pdf;ZDJ_008_atlas_volksschul_atlas_closeup.pdf;Volksschul-Atlas - zblizenie;material_szkolny;wysoka;TAK;;
+ZDJ;9;Zdjęcia komplety urzędnik nauczyciel żołnierz _p009.pdf;ZDJ_009_atlas_with_labels_and_group_photo.pdf;atlas z opisami i fotografia grupowa;material_szkolny_i_fotograficzny;wysoka;TAK;;widoczna pieczec szkolna i podpisy
+ZDJ;10;Zdjęcia komplety urzędnik nauczyciel żołnierz _p010.pdf;ZDJ_010_school_stamp_leipzig_gohlis_and_group_photo_closeup.pdf;pieczec 4. kath. Volksschule Leipzig-Gohlis i fotografia grupowa;material_szkolny_i_fotograficzny;wysoka;TAK;;
+ZDJ;11;Zdjęcia komplety urzędnik nauczyciel żołnierz _p011.pdf;ZDJ_011_red_album_formal_photos_and_meeting.pdf;czerwona karta albumowa: fotografie formalne i spotkanie;fotografia_albumowa;wysoka;TAK;;
+ZDJ;14;Zdjęcia komplety urzędnik nauczyciel żołnierz _p014.pdf;ZDJ_014_red_album_mixed_photos_wide.pdf;czerwona karta albumowa: mieszany zestaw fotografii, szeroki kadr;fotografia_albumowa;wysoka;TAK;;
+ZDJ;16;Zdjęcia komplety urzędnik nauczyciel żołnierz _p016.pdf;ZDJ_016_reverses_colonia_policyjna_1935_initials_signatures.pdf;rewersy: kolonia policyjna 1935, inicjaly i podpisy;rewers_fotografii;wysoka;TAK;;
+ZDJ;17;Zdjęcia komplety urzędnik nauczyciel żołnierz _p017.pdf;ZDJ_017_reverses_colonia_policyjna_with_uniform_portrait.pdf;rewersy kolonia policyjna + portret mundurowy;rewers_fotografii_i_portret;wysoka;TAK;;
+ZDJ;18;Zdjęcia komplety urzędnik nauczyciel żołnierz _p018.pdf;ZDJ_018_reverses_notes_signature_and_colonia_policyjna_1936.pdf;rewersy, notatki i wzmianka o kolonii policyjnej z 1936 r.;rewers_fotografii;wysoka;TAK;;
+ZDJ;19;Zdjęcia komplety urzędnik nauczyciel żołnierz _p019.pdf;ZDJ_019_uniform_portrait_and_wedding_photo.pdf;portret mundurowy i fotografia slubna;portret_i_fotografia_rodzinna;wysoka;TAK;;
+ZDJ;20;Zdjęcia komplety urzędnik nauczyciel żołnierz _p020.pdf;ZDJ_020_handwritten_dedication_lwow_1938_and_note.pdf;rewers z odreczna dedykacja Lwow 30 IX 1938 i nota;rewers_fotografii;wysoka;TAK;;
