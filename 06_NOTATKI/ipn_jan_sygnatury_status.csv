@@ -1,0 +1,18 @@
+SYGNATURA_LUB_ODWOLANIE;OPIS;STATUS;UWAGA
+T777_002;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;potwierdzona;rekord w T777
+T777_003;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;potwierdzona;rekord w T777
+T777_005;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;potwierdzona;rekord w T777
+T777_006;Odpis aktu zgonu Jana St. Baczyńskiego;potwierdzona;rekord w T777
+T777_007;Pismo NSZZ Solidarność z 17 zarzutami;potwierdzona;rekord w T777
+T777_024;Głos Wielkopolski nr 39 z 17.02.1978;potwierdzona;rekord w T777
+T777_025;Notatka SB z 29.06.1977;potwierdzona;rekord w T777
+T777_026;Notatka SB z 31.08.1978;potwierdzona;rekord w T777
+L007;Powiązanie wskazane przy akcie zgonu;do sprawdzenia;oznaczenie pomocnicze, wymaga rozwinięcia identyfikatora
+L008;Powiązanie wskazane przy akcie zgonu;do sprawdzenia;oznaczenie pomocnicze, wymaga rozwinięcia identyfikatora
+K001-K006;Powiązania wskazane przy piśmie z 17 zarzutami;do sprawdzenia;oznaczenia pomocnicze, wymagają rozwinięcia identyfikatorów
+nr_rejestracyjny_IPN;Numer rejestracyjny śladu ewidencyjnego;niepotwierdzona;do uzyskania w odpowiedzi IPN
+nr_archiwalny_IPN;Numer archiwalny materiału;niepotwierdzona;do uzyskania w odpowiedzi IPN
+protokol_brakowania;Numer protokołu brakowania;niepotwierdzona;do uzyskania w odpowiedzi IPN
+kategoria_ewidencyjna;Kategoria ewidencyjna wpisu;niepotwierdzona;do uzyskania w odpowiedzi IPN
+jednostka_wpisujaca;Jednostka dokonująca wpisu;niepotwierdzona;do uzyskania w odpowiedzi IPN
+jednostka_prowadzaca;Jednostka prowadząca ewentualne materiały;niepotwierdzona;do uzyskania w odpowiedzi IPN
