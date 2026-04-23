@@ -15,6 +15,13 @@ Starter przeglądarkowego frontu Archiwum 13.
 - [Pakiet roboczy SAS](../06_NOTATKI/pakiet_roboczy_SAS.md)
 - [Front HTML](./ARCHIWUM_13_START.html)
 
+## Szybki start (lokalnie)
+1. Uruchom podgląd HTML:
+   - otwórz `07_APP/ARCHIWUM_13_START.html` bezpośrednio w przeglądarce **lub**
+   - wystartuj prosty serwer statyczny (np. `python3 -m http.server`) i wejdź na `/07_APP/ARCHIWUM_13_START.html`.
+2. Traktuj README jako mapę przejścia między warstwami źródeł.
+3. Po każdej większej zmianie danych sprawdź, czy linki do CSV i notatek nadal działają.
+
 ## Co już działa
 - strona główna archiwum,
 - sekcje: zbiory, obiekty, osoby, miejsca, oś czasu,
