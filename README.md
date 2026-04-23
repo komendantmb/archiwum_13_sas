@@ -19,3 +19,7 @@ Zasada:
 - [Rejestr Teczki 777](./05_T777/rejestr_t777.csv)
 - [Rejestr artefaktów rodu](./06_NOTATKI/ARTEFAKTY_RODU.csv)
 - [Rejestr pozycji prasowych](./02_I/pozycje_prasowe.csv)
+
+## Aktualny punkt wejścia dla etapu IPN / Jan
+- [Indeks etapu IPN / Jan](./06_NOTATKI/index_ipn_jan.md)
+- [Publikacja etapu z 2026-04-23](./06_NOTATKI/2026-04-23_publikacja_etap_ipn_jan.md)
