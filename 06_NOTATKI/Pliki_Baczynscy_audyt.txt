@@ -1,0 +1,50 @@
+Wdrożyłem poprawki w duchu audytu i jednocześnie sprawdziłem nowo dosłany materiał. Jedna ważna uwaga: sam fakt istnienia wystąpienia „Solidarności” i listy zarzutów nie wygląda już na zmyślenie, bo w nowo wgranym pliku są widoczne dokumenty z 3.12.1980 r. związane z NSZZ „Solidarność”, odwołaniem do NIK i załącznikiem opisanym jako lista zarzutów. Dla wersji kierowanej do IPN i tak lepiej nie rozwijać dziś całej listy w narracji, dopóki nie zostanie ona osobno przepisana, opisana i spięta z sygnaturami. W tym samym pliku widać też notatki filozoficzne, ale nie dają one podstaw do daleko idącej psychologizacji postaci.
+
+Poniżej daję poprawioną wersję fragmentów do podstawienia w dokumencie.
+
+WERSJA PO AUDYCIE
+
+Uwagi metodologiczne i podstawa źródłowa
+
+Niniejsze opracowanie ma charakter biograficzno źródłowy i zostało sporządzone przede wszystkim na podstawie materiałów pozostających poza publicznym obiegiem, w szczególności dokumentów z prywatnego archiwum rodzinnego, zachowanej korespondencji, notatek własnych Jana Stanisława Baczyńskiego, materiałów zakładowych ChZPiP, dokumentacji urzędowej i akt archiwalnych wymagających odrębnego oznaczenia sygnaturami. W obecnej wersji roboczej opracowanie korzysta także z relacji ustnych, które mają charakter pomocniczy i nie mogą zastępować źródeł archiwalnych. Każde twierdzenie wymagające weryfikacji archiwalnej powinno przed przekazaniem do IPN zostać opatrzone dokładnym wskazaniem zespołu, sygnatury, jednostki archiwalnej oraz karty lub strony.
+
+Sekcję „Cytowane prace” proponuję zastąpić tak:
+
+Podstawa źródłowa:
+Opracowanie własne na podstawie prywatnego archiwum rodzinnego [P], w tym zachowanych dokumentów osobistych, korespondencji i notatek Jana Stanisława Baczyńskiego, materiałów metrykalnych i urzędowych [sygnatury do uzupełnienia], materiałów dotyczących służby wojskowej i pracy zawodowej [sygnatury do uzupełnienia], dokumentów z zasobu IPN [sygnatury do uzupełnienia] oraz relacji ustnych [R]. Wersja przedłożona do dalszej weryfikacji archiwalnej.
+
+Fragment o służbie powojennej
+
+Zamiast zdania:
+„Jako młody oficer brał udział w operacjach przeciwko oddziałom UPA na południowo wschodnich rubieżach Polski.”
+
+Wstaw:
+„Jak wynika z dostępnych materiałów osobowych, w latach powojennych pełnił służbę w strukturach Wojska Polskiego uczestniczących w działaniach wojskowych i zabezpieczających na terenach objętych konfliktem z ukraińskim podziemiem zbrojnym, w tym z oddziałami UPA. Zakres, charakter i podstawa prawna tych działań wymagają dalszego doprecyzowania na podstawie pełnych akt służbowych.”
+
+To jest bezpieczniejsze, bardziej precyzyjne i nie dopisuje ponad źródło.
+
+Fragment „Inwigilacja i Kontrowersje”
+
+Cały akapit z rozwiniętą listą 17 zarzutów należy usunąć i zastąpić takim brzmieniem:
+
+„Zachowane materiały wskazują, że w grudniu 1980 roku nowo powstałe struktury NSZZ „Solidarność” związane z Chodzieskimi Zakładami Porcelany i Porcelitu skierowały oficjalne wystąpienia, w których sformułowano szereg zarzutów dotyczących sposobu gospodarowania mieniem zakładu oraz decyzji podejmowanych przez kierownictwo. Z dostępnych dokumentów wynika również, że Jan Stanisław Baczyński odpowiadał na te zarzuty, przedstawiając własne uzasadnienia o charakterze technicznym, organizacyjnym i administracyjnym. Na obecnym etapie, do czasu pełnego opracowania materiału źródłowego i uzupełnienia sygnatur, nie ma podstaw do przytaczania całej listy zarzutów w formie rozwiniętej.”
+
+Ta wersja zachowuje fakt źródłowy, ale nie ryzykuje nadmiarowej rekonstrukcji.
+
+Fragment „Studium Intelektualne”
+
+Zamiast zdania:
+„Rozważał koncepcje kompleksu Edypa oraz ‘popędu mocy’ Adlera...”
+
+Wstaw:
+„W zachowanych notatkach podejmował próby analizy wybranych koncepcji filozoficznych i psychologicznych, w tym odniesień do Freuda i Adlera, co świadczy o szerokich, najpewniej prywatnych, zainteresowaniach intelektualnych. Materiał ten nie daje jednak podstaw do budowania dalej idących wniosków o jego światopoglądzie bez szerszego kontekstu źródłowego.”
+
+To od razu odcina ryzyko nadinterpretacji.
+
+Dodałbym jeszcze jedno zdanie zabezpieczające do całego opracowania, najlepiej na końcu wstępu albo w nocie metodologicznej:
+
+„W miejscach, w których materiał źródłowy nie pozwala jeszcze na pełne odtworzenie przebiegu zdarzeń lub dokładnej kwalifikacji instytucjonalnej, autor świadomie ogranicza się do formuł ostrożnych i nie przesądza kwestii wymagających dalszej kwerendy archiwalnej.”
+
+Moja rekomendacja po poprawkach jest taka: dokument jest już wyraźnie bezpieczniejszy, ale nadal nie powinien iść do IPN w tej wersji jako finalnej, dopóki nie dostanie pełnego aparatu sygnaturowego. Największy zysk z tej korekty jest taki, że usuwamy fragmenty najbardziej narażone na zarzut nadpisania treści ponad źródło.
+
+W kolejnym kroku mogę złożyć Ci to w jedną, czystą wersję całego tekstu po audycie, już w stylu pisma lub załącznika roboczego dla IPN.
