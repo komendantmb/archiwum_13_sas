@@ -2,31 +2,43 @@
 
 Starter przeglądarkowego frontu Archiwum 13.
 
-Cel:
+## Cel
 - dać działający punkt wejścia do archiwum bez stawiania od razu Omeka S,
 - umożliwić wejście do klikanej wersji roboczej archiwum,
-- przygotować model pod późniejsze zasilenie realnymi zdjęciami, dokumentami i metadanymi.
+- spiąć front aplikacyjny z realnymi plikami repo.
 
-Pliki:
-- `ARCHIWUM_13_START.html` – samodzielny plik HTML uruchamiany lokalnie w przeglądarce,
-- ten README – krótka instrukcja startu.
+## Otwórz archiwum od razu stąd
+- [README główne](../README.md)
+- [Rejestr Teczki 777](../05_T777/rejestr_t777.csv)
+- [Rejestr artefaktów rodu](../06_NOTATKI/ARTEFAKTY_RODU.csv)
+- [Rejestr pozycji prasowych](../02_I/pozycje_prasowe.csv)
+- [Pakiet roboczy SAS](../06_NOTATKI/pakiet_roboczy_SAS.md)
+- [Front HTML](./ARCHIWUM_13_START.html)
 
-Jak uruchomić:
-1. Pobierz repozytorium na komputer.
-2. Otwórz plik `07_APP/ARCHIWUM_13_START.html` dwuklikiem w przeglądarce.
-3. Korzystaj z wyszukiwarki, filtrów i kart obiektów.
-
-Co już działa:
+## Co już działa
 - strona główna archiwum,
 - sekcje: zbiory, obiekty, osoby, miejsca, oś czasu,
 - filtrowanie po warstwach źródłowych [P] [I] [R] [H],
 - szczegóły klikniętego obiektu,
-- gotowy szkielet pod podpięcie prawdziwych plików.
+- realne wejście do plików roboczych repo.
 
-Stan:
-To jest działający front roboczy, a nie pełna baza Omeka S. Ma dać realny, klikalny dostęp do struktury archiwum już teraz.
+## Najkrótsza ścieżka pracy
+1. Otwórz `README.md`.
+2. Wejdź do `07_APP/README.md`.
+3. Otwórz `05_T777/rejestr_t777.csv`.
+4. Otwórz `06_NOTATKI/ARTEFAKTY_RODU.csv`.
+5. Otwórz `02_I/pozycje_prasowe.csv`.
+6. Czytaj `06_NOTATKI/pakiet_roboczy_SAS.md` jako notatkę operacyjną.
 
-Następny etap:
-- podpięcie prawdziwych skanów i zdjęć,
-- rozbudowa danych JSON w środku pliku,
-- ewentualne przejście do pełnej instalacji Omeka S lub innego systemu serwerowego.
+## Stan
+To jest działający front roboczy i punkt wejścia do archiwum. Teczka 777 ma aktywny rejestr, artefakty są odseparowane od rdzenia, a pozycje prasowe są wydzielone do warstwy `02_I`.
+
+## Uwaga metodologiczna
+- `05_T777` jest rdzeniem dowodowym i ma opierać się wyłącznie na materiale `[P]`.
+- `06_NOTATKI` zawiera rejestry pomocnicze i decyzje robocze.
+- `02_I` zawiera prasę i opracowania wtórne.
+
+## Następny etap
+- dalsze dopinanie rekordów do T777,
+- podpinanie prawdziwych skanów i zdjęć do frontu HTML,
+- rozbudowa danych w `07_APP/ARCHIWUM_13_START.html`.
