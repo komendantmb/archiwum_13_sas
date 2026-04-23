@@ -1,27 +1,27 @@
-ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA
-T777_001;19451004;FOTO;Fotografia grupowa (5 osób w mundurach);Włocławek;[P];T777_002, T777_004
-T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;[P];T777_001, T777_005
-T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005, T777_019
-T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001
-T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003
-T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008
-T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006
-T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];T777_009, T777_010
-T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008, T777_010
-T777_010;19761228;WNIOSEK;Ponowny wniosek o limit km dla dyrektora;Chodzież;[P];T777_008, T777_009
-T777_011;00000000;ZAPROSZENIE;Zaproszenie WOSS im. gen. A. Waszkiewicza dla Jana Baczyńskiego, dyrektora Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_012, T777_013
-T777_012;00000000;WIZYTOWKA;Wizytówka służbowa: Dyrektor Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_011, T777_013
-T777_013;00000000;WIZYTOWKA;Wizytówka zakładowa z adresem ul. Łąkowa 2 i numerem telefonu 147;Chodzież;[P];T777_011, T777_012
-T777_014;19730000;ZAPROSZENIE;Zaproszenie Dzień Budowlanych 1973;;[P];
-T777_015;19720928;LIST;List odręczny z Tušimic datowany 28.09.1972;Tušimice;[P];T777_016
-T777_016;19720900;KOPERTA;Koperta adresowana do Chodzieskich Zakładów Porcelany i Porcelitu;Chodzież;[P];T777_015
-T777_017;19721211;KOPERTA;Koperta od Norton Industrial Ceramic Division Europe do Jana Baczyńskiego, dyrektora generalnego;Conflans-Sainte-Honorine;[P];T777_018
-T777_018;19721200;KARTKA;Kartka świąteczna od Norton Industrial Ceramic Division Europe;Conflans-Sainte-Honorine;[P];T777_017
-T777_019;00000000;TELEGRAM;Telegram gratulacyjny od Franciszkiewicza z okazji odznaczenia orderem;;[P];T777_003
-T777_020;00000000;PRASA;Wycinek prasowy Scementowana krwią;;[P];T777_021, T777_022
-T777_021;19431011;PRASA;Wycinek prasowy Z rozkazu do żołnierzy I Dywizji;;[P];T777_020, T777_022
-T777_022;00000000;PRASA;Wycinek prasowy o polskich żołnierzach walczących na froncie wschodnim;;[P];T777_020, T777_021
-T777_023;00000000;PRASA;Zestaw wycinków prasowych dotyczących I Dywizji i ZPP;;[P];T777_020, T777_021, T777_022
-T777_024;19780217;PRASA;Głos Wielkopolski nr 39: Jan Baczyński wymieniony jako przewodniczący Wojewódzkiej Komisji Rewizyjnej PZPR;Piła;[P];T777_025, T777_026
-T777_025;19770629;NOTATKA_SB;Notatka SB o kontakcie Jana Baczyńskiego i inż. T. Borowiaka z firmą Zeidler z RFN oraz wątku PHZ Polimex-Cekop;Piła;[P];T777_024, T777_026
-T777_026;19780831;NOTATKA_SB;Notatka SB wskazująca wykorzystanie zebranych informacji do wyjaśnienia i zakończenia SOS krypt. WYKOP;Piła;[P];T777_024, T777_025
+ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA;LOKALIZACJA_W_ZRODLE;CYTAT_MINIMALNY;CZY_DOTYCZY_BEZPOSREDNIO_JANA;UWAGA_METODOLOGICZNA
+T777_001;19451004;FOTO;Fotografia grupowa (5 osób w mundurach);Włocławek;[P];T777_002, T777_004;;;;
+T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;[P];T777_001, T777_005;;;;
+T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005, T777_019;;;;
+T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001;;;;
+T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003;;;;
+T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008;akt zgonu / wpis USC;Jan St. Baczyński;TAK;Odpis urzędowy; nośnik pośmiertny.
+T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006;;;;
+T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];T777_009, T777_010;;;;
+T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008, T777_010;;;;
+T777_010;19761228;WNIOSEK;Ponowny wniosek o limit km dla dyrektora;Chodzież;[P];T777_008, T777_009;;;;
+T777_011;00000000;ZAPROSZENIE;Zaproszenie WOSS im. gen. A. Waszkiewicza dla Jana Baczyńskiego, dyrektora Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_012, T777_013;;;;
+T777_012;00000000;WIZYTOWKA;Wizytówka służbowa: Dyrektor Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_011, T777_013;;;;
+T777_013;00000000;WIZYTOWKA;Wizytówka zakładowa z adresem ul. Łąkowa 2 i numerem telefonu 147;Chodzież;[P];T777_011, T777_012;;;;
+T777_014;19730000;ZAPROSZENIE;Zaproszenie Dzień Budowlanych 1973;;[P];;;;;
+T777_015;19720928;LIST;List odręczny z Tušimic datowany 28.09.1972;Tušimice;[P];T777_016;;;;
+T777_016;19720900;KOPERTA;Koperta adresowana do Chodzieskich Zakładów Porcelany i Porcelitu;Chodzież;[P];T777_015;;;;
+T777_017;19721211;KOPERTA;Koperta od Norton Industrial Ceramic Division Europe do Jana Baczyńskiego, dyrektora generalnego;Conflans-Sainte-Honorine;[P];T777_018;;;;
+T777_018;19721200;KARTKA;Kartka świąteczna od Norton Industrial Ceramic Division Europe;Conflans-Sainte-Honorine;[P];T777_017;;;;
+T777_019;00000000;TELEGRAM;Telegram gratulacyjny od Franciszkiewicza z okazji odznaczenia orderem;;[P];T777_003;;;;
+T777_020;00000000;PRASA;Wycinek prasowy Scementowana krwią;;[P];T777_021, T777_022;;;;
+T777_021;19431011;PRASA;Wycinek prasowy Z rozkazu do żołnierzy I Dywizji;;[P];T777_020, T777_022;;;;
+T777_022;00000000;PRASA;Wycinek prasowy o polskich żołnierzach walczących na froncie wschodnim;;[P];T777_020, T777_021;;;;
+T777_023;00000000;PRASA;Zestaw wycinków prasowych dotyczących I Dywizji i ZPP;;[P];T777_020, T777_021, T777_022;;;;
+T777_024;19780217;PRASA;Głos Wielkopolski nr 39: Jan Baczyński wymieniony jako przewodniczący Wojewódzkiej Komisji Rewizyjnej PZPR;Piła;[P];T777_025, T777_026;wycinek prasowy / lista władz;Jan Baczyński;TAK;Dowód obecności w oficjalnym obiegu publicznym; nie dowodzi zakresu faktycznej sprawczości.
+T777_025;19770629;NOTATKA_SB;Notatka SB o kontakcie Jana Baczyńskiego i inż. T. Borowiaka z firmą Zeidler z RFN oraz wątku PHZ Polimex-Cekop;Piła;[P];T777_024, T777_026;notatka SB z 29.06.1977;Jan Baczyński; T. Borowiak; Zeidler; PHZ Polimex-Cekop;TAK;Rejestruje treść operacyjną SB; wymaga odróżnienia zapisu funkcjonariusza od ustalenia obiektywnego.
+T777_026;19780831;NOTATKA_SB;Notatka SB wskazująca wykorzystanie zebranych informacji do wyjaśnienia i zakończenia SOS krypt. WYKOP;Piła;[P];T777_024, T777_025;notatka SB z 31.08.1978;SOS krypt. WYKOP;NIE;Dokument wiąże zebrane informacje ze sprawą WYKOP; nie stanowi sam przez się dowodu winy ani współpracy.
