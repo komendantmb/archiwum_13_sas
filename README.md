@@ -9,6 +9,7 @@ Struktura pracy:
 - 04_H = hipotezy robocze
 - 05_T777 = rejestr materiału dowodowego Teczki 777
 - 06_NOTATKI = notatki robocze
+- 07_APP = front startowy i punkt wejścia do klikanej wersji archiwum
 
 Zasada:
 „Teczka 777 opiera się wyłącznie na materiale [P].”
