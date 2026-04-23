@@ -1,0 +1,4 @@
+ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA
+T777_024;19790000;ALBUM;Album absolwentów AGH Kraków-Chodzież 1974-1979 z kartami podziękowań;Chodzież;[P];T777_025, T777_026
+T777_025;19790000;KARTA;Karta podziękowania dla mgr Jana Baczyńskiego, dyrektora naczelnego ChZPiP;Chodzież;[P];T777_024, T777_026
+T777_026;19790000;KARTY;Zespół kart AGH dla Alfreda Kowalskiego, Andrzeja Śliwińskiego i Zbigniewa Skoczylasa;Chodzież;[P];T777_024, T777_025
