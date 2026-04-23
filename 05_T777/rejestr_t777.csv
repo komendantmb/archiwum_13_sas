@@ -4,7 +4,7 @@ T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;
 T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005, T777_019;;;;
 T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001;;;;
 T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003;;;;
-T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008;akt zgonu / wpis USC;Jan St. Baczyński;TAK;Odpis urzędowy; nośnik pośmiertny.
+T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008;akt zgonu / wpis USC;Jan St. Baczyński;TAK;Odpis urzędowy, nośnik pośmiertny.
 T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006;;;;
 T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];T777_009, T777_010;;;;
 T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008, T777_010;;;;
@@ -22,6 +22,6 @@ T777_020;00000000;PRASA;Wycinek prasowy Scementowana krwią;;[P];T777_021, T777_
 T777_021;19431011;PRASA;Wycinek prasowy Z rozkazu do żołnierzy I Dywizji;;[P];T777_020, T777_022;;;;
 T777_022;00000000;PRASA;Wycinek prasowy o polskich żołnierzach walczących na froncie wschodnim;;[P];T777_020, T777_021;;;;
 T777_023;00000000;PRASA;Zestaw wycinków prasowych dotyczących I Dywizji i ZPP;;[P];T777_020, T777_021, T777_022;;;;
-T777_024;19780217;PRASA;Głos Wielkopolski nr 39: Jan Baczyński wymieniony jako przewodniczący Wojewódzkiej Komisji Rewizyjnej PZPR;Piła;[P];T777_025, T777_026;wycinek prasowy / lista władz;Jan Baczyński;TAK;Dowód obecności w oficjalnym obiegu publicznym; nie dowodzi zakresu faktycznej sprawczości.
-T777_025;19770629;NOTATKA_SB;Notatka SB o kontakcie Jana Baczyńskiego i inż. T. Borowiaka z firmą Zeidler z RFN oraz wątku PHZ Polimex-Cekop;Piła;[P];T777_024, T777_026;notatka SB z 29.06.1977;Jan Baczyński; T. Borowiak; Zeidler; PHZ Polimex-Cekop;TAK;Rejestruje treść operacyjną SB; wymaga odróżnienia zapisu funkcjonariusza od ustalenia obiektywnego.
-T777_026;19780831;NOTATKA_SB;Notatka SB wskazująca wykorzystanie zebranych informacji do wyjaśnienia i zakończenia SOS krypt. WYKOP;Piła;[P];T777_024, T777_025;notatka SB z 31.08.1978;SOS krypt. WYKOP;NIE;Dokument wiąże zebrane informacje ze sprawą WYKOP; nie stanowi sam przez się dowodu winy ani współpracy.
+T777_024;19780217;PRASA;Głos Wielkopolski nr 39: Jan Baczyński wymieniony jako przewodniczący Wojewódzkiej Komisji Rewizyjnej PZPR;Piła;[P];T777_025, T777_026;wycinek prasowy / lista władz;Jan Baczyński;TAK;Dowód obecności w oficjalnym obiegu publicznym, nie dowodzi zakresu faktycznej sprawczości.
+T777_025;19770629;NOTATKA_SB;Notatka SB o kontakcie Jana Baczyńskiego i inż. T. Borowiaka z firmą Zeidler z RFN oraz wątku PHZ Polimex-Cekop;Piła;[P];T777_024, T777_026;notatka SB z 29.06.1977;Jan Baczyński, T. Borowiak, Zeidler, PHZ Polimex-Cekop;TAK;Rejestruje treść operacyjną SB, wymaga odróżnienia zapisu funkcjonariusza od ustalenia obiektywnego.
+T777_026;19780831;NOTATKA_SB;Notatka SB wskazująca wykorzystanie zebranych informacji do wyjaśnienia i zakończenia SOS krypt. WYKOP;Piła;[P];T777_024, T777_025;notatka SB z 31.08.1978;SOS krypt. WYKOP;NIE;Dokument wiąże zebrane informacje ze sprawą WYKOP, nie stanowi sam przez się dowodu winy ani współpracy.
