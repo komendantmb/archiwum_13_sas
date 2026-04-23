@@ -1,23 +1,22 @@
-# Gazety plakaty.pdf
+# DUPLIKAT NIEAKTYWNY
 
-## Status importu
-- plik zidentyfikowany w pakiecie roboczym z 2026-04-23
-- oryginalny upload pozostaje w sesji czatu
-- do repo zapisano metadane i klasyfikacje, bo bezposredni push binarnego PDF z tego interfejsu jest ograniczony rozmiarem pliku
+Ten plik nie jest aktywna metadana zrodla.
 
-## Metadane techniczne
-- nazwa z uploadu: `Gazety plakaty.pdf`
-- rozmiar: `70454177` bajtow
-- sha256: `e153c7b388abcfbf534d6c6cdb02c42aaba787994acb3d983e5480bf97fe4996`
+## Powod wylaczenia
+Plik `Gazety plakaty.pdf` ma juz istniejacy rekord metadanych w:
 
-## Klasyfikacja
-- warstwa: `02_I`
-- typ: pakiet mieszany prasa / plakaty / duplikaty wojskowe / notatki
-- status: nie wchodzi hurtowo do T777
+`01_P/brak_daty_zestaw_gazety_plakaty_jan_baczynski.pdf.meta.md`
 
-## Uzasadnienie
-Plik laczy rozne typy nosnikow. Sa tu wtornie sfotografowane lub zestawione materiały wojskowe, skany prasy z 1937 i 1943 roku, plakat Kongresu Jednosci Klasy Robotniczej z 1948 roku oraz inne pojedyncze karty. Czesc stron powiela material juz ujety w rdzeniu wojskowym T777.
+Tamten rekord pozostaje wlasciwym opisem zrodla i utrzymuje klasyfikacje `[P]`.
 
-## Dalszy ruch
-- traktowac jako pakiet do rozbioru strona po stronie
-- do T777 wpisywac tylko pojedyncze, opisane karty po oddzielnej weryfikacji
+## Status tego pliku
+- status: `NIEAKTYWNY_DUPLIKAT`
+- nie uzywac do indeksacji
+- nie uzywac do T777
+- nie traktowac jako drugiej klasyfikacji zrodla
+- nie zmieniac klasyfikacji `[P]` istniejacego rekordu w `01_P`
+
+## Decyzja archiwalna
+Ten plik zostal pozostawiony jedynie jako sladowa notatka porzadkujaca po konflikcie metadanych w PR #1.
+
+Jedno zrodlo ma miec jeden aktywny rekord metadanych. Dla `Gazety plakaty.pdf` aktywny rekord znajduje sie w `01_P`.
