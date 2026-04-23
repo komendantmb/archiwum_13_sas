@@ -1,0 +1,25 @@
+POLE_KONTROLNE;PYTANIE_DO_IPN;STATUS_ODPOWIEDZI;ODPOWIEDZ_IPN;OCENA_METODOLOGICZNA;DZIALANIE_DALEJ
+czy_tylko_zapis_ewidencyjny;Czy w zasobie istnieje wyłącznie zapis ewidencyjny czy również inne materiały merytoryczne?;oczekuje;;;po otrzymaniu odpowiedzi ocenić kompletność
+sygnatury;Jakie są wszystkie sygnatury dotyczące Jana Stanisława Baczyńskiego?;oczekuje;;;wpisać do tabeli sygnatur
+numery_rejestracyjne;Jakie są wszystkie numery rejestracyjne i archiwalne?;oczekuje;;;wpisać do tabeli sygnatur
+podstawa_wpisu;Jaka była podstawa wpisu ewidencyjnego?;oczekuje;;;ocenić czy to materiał pierwotny czy wtórny
+kategoria_ewidencyjna;Jaka była kategoria ewidencyjna wpisu?;oczekuje;;;ocenić ciężar dowodowy
+jednostka_wpisujaca;Jaka jednostka dokonała wpisu?;oczekuje;;;dopisać do osi IPN
+jednostka_prowadzaca;Jaka jednostka prowadziła ewentualne materiały?;oczekuje;;;dopisać do osi IPN
+data_pierwszej_rejestracji;Jaka była data pierwszej rejestracji?;oczekuje;;;dopisać do osi IPN
+data_wyrejestrowania;Jaka była data wyrejestrowania albo zakończenia sprawy?;oczekuje;;;dopisać do osi IPN
+teczka_personalna;Czy zachowała się teczka personalna?;oczekuje;;;jeżeli tak, żądać udostępnienia
+teczka_pracy;Czy zachowała się teczka pracy?;oczekuje;;;jeżeli tak, żądać udostępnienia
+raporty_ze_spotkan;Czy istnieją raporty ze spotkań?;oczekuje;;;jeżeli tak, żądać udostępnienia
+zobowiazanie;Czy istnieje podpisane zobowiązanie?;oczekuje;;;jeżeli tak, żądać kopii
+pokwitowania;Czy istnieją pokwitowania świadczeń lub pieniędzy?;oczekuje;;;jeżeli tak, żądać kopii
+wlasnoreczne_materialy;Czy istnieją odręczne informacje własnoręczne?;oczekuje;;;jeżeli tak, żądać kopii
+karty_ewidencyjne;Czy istnieją karty E-1, EO-1, E-14, E-16 lub pokrewne?;oczekuje;;;dopisać identyfikatory
+ewidencja_wojskowa_cywilna;Czy materiał pochodzi z ewidencji wojskowej, cywilnej czy z obu?;oczekuje;;;porównać zasoby
+korekty_wpisu;Czy wpis był kiedykolwiek korygowany, anulowany lub uzupełniany?;oczekuje;;;odnotować znaczenie krytyczne
+powiazania_inna_pisownia;Czy istnieją powiązane rekordy pod inną pisownią nazwiska?;oczekuje;;;sprawdzić warianty
+powiazania_data_urodzenia;Czy istnieją rekordy powiązane pod samą datą urodzenia?;oczekuje;;;sprawdzić warianty
+rownolegle_zasoby;Czy istnieją równoległe ślady w zasobie wojskowym i pozawojskowym?;oczekuje;;;spiąć międzyzasobowo
+zniszczenie_akt;Czy akta zostały zniszczone lub wybrakowane?;oczekuje;;;jeżeli tak, uruchomić blok brakowania
+protokol_brakowania;Czy istnieje protokół brakowania?;oczekuje;;;wpisać numer i pozycję
+wyjasnienie_dolaczone;Pod jaką jednostką archiwalną dołączono wyjaśnienie strony?;oczekuje;;;odnotować trwały ślad w zasobie
