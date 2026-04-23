@@ -22,4 +22,6 @@ T777_020;00000000;PRASA;Wycinek prasowy Scementowana krwią;;[P];T777_021, T777_
 T777_021;19431011;PRASA;Wycinek prasowy Z rozkazu do żołnierzy I Dywizji;;[P];T777_020, T777_022
 T777_022;00000000;PRASA;Wycinek prasowy o polskich żołnierzach walczących na froncie wschodnim;;[P];T777_020, T777_021
 T777_023;00000000;PRASA;Zestaw wycinków prasowych dotyczących I Dywizji i ZPP;;[P];T777_020, T777_021, T777_022
-T777_024;19780217;PRASA;Głos Wielkopolski nr 39: Jan Baczyński wymieniony jako przewodniczący Wojewódzkiej Komisji Rewizyjnej PZPR;Piła;[P];
+T777_024;19780217;PRASA;Głos Wielkopolski nr 39: Jan Baczyński wymieniony jako przewodniczący Wojewódzkiej Komisji Rewizyjnej PZPR;Piła;[P];T777_025, T777_026
+T777_025;19770629;NOTATKA_SB;Notatka SB o kontakcie Jana Baczyńskiego i inż. T. Borowiaka z firmą Zeidler z RFN oraz wątku PHZ Polimex-Cekop;Piła;[P];T777_024, T777_026
+T777_026;19780831;NOTATKA_SB;Notatka SB wskazująca wykorzystanie zebranych informacji do wyjaśnienia i zakończenia SOS krypt. WYKOP;Piła;[P];T777_024, T777_025
