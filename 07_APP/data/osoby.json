@@ -1,0 +1,47 @@
+[
+  {
+    "id": "OSOBA-JSB-1926",
+    "imie": "Jan Stanislaw",
+    "nazwisko": "Baczynski",
+    "daty": {
+      "urodzenie": "1926-03-11",
+      "smierc": "1982-05-12"
+    },
+    "miejsca": ["Jazlowiec", "Chodziez", "Pila"],
+    "warstwa": "P/I",
+    "status": "rdzen_biograficzny",
+    "opis": "Centralna postac Archiwum 13 SAS i Teczki 777. Material obejmuje sluzbe wojskowa, prace zawodowa, dokumenty zakladowe, watki 1980-1982 oraz dokumenty rodzinne.",
+    "powiazane_dokumenty": ["DOC-GW-1978-0039", "DOC-GAZETY-PLAKATY", "DOC-CZARNO-BIALE", "DOC-WIELKOPOLSKI-STOL"],
+    "powiazane_zdarzenia": ["ZDR-1926-URODZENIE-JSB", "ZDR-1978-KOMISJA-REWIZYJNA", "ZDR-1982-SMIERC-JSB"]
+  },
+  {
+    "id": "OSOBA-MB-1896",
+    "imie": "Michal",
+    "nazwisko": "Baczynski",
+    "daty": {
+      "urodzenie": "1896-05-13",
+      "smierc": null
+    },
+    "miejsca": ["Demycze", "Kresy", "II RP"],
+    "warstwa": "P/I/H",
+    "status": "linia_rodowa",
+    "opis": "Ojciec Jana Stanislawa Baczynskiego. W projekcie wystepuje jako wazny wezel linii kresowej i sluzby panstwowej II RP.",
+    "powiazane_dokumenty": ["DOC-WIELKOPOLSKI-STOL", "DOC-CZARNO-BIALE"],
+    "powiazane_zdarzenia": []
+  },
+  {
+    "id": "OSOBA-JMB-1983",
+    "imie": "Jan Michal",
+    "nazwisko": "Baczynski",
+    "daty": {
+      "urodzenie": "1983-11-04",
+      "smierc": null
+    },
+    "miejsca": ["Polska"],
+    "warstwa": "R/organizacyjne",
+    "status": "kustosz",
+    "opis": "Kustosz Archiwum 13 SAS i osoba prowadzaca porzadkowanie repozytorium oraz Teczki 777.",
+    "powiazane_dokumenty": [],
+    "powiazane_zdarzenia": []
+  }
+]
