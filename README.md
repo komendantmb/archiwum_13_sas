@@ -13,3 +13,9 @@ Struktura pracy:
 
 Zasada:
 „Teczka 777 opiera się wyłącznie na materiale [P].”
+
+## Otwórz archiwum
+- [Wejście do archiwum przez 07_APP](./07_APP/README.md)
+- [Rejestr Teczki 777](./05_T777/rejestr_t777.csv)
+- [Rejestr artefaktów rodu](./06_NOTATKI/ARTEFAKTY_RODU.csv)
+- [Rejestr pozycji prasowych](./02_I/pozycje_prasowe.csv)
