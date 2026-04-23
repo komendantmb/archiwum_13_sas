@@ -1,0 +1,26 @@
+ID;KOLEKCJA;NR_STRONY_PO_ROZBICIU;STARY_PLIK;NOWY_PLIK;KATEGORIA_MANIFESTU;PEWNOŚĆ_NAZWANIA;RDZEŃ_P;GRUPA_DUPLIKATÓW;UWAGI
+T777_011;GAZ;2;Gazety plakaty_p002.pdf;GAZ_002_rozkaz_wojskowy_wloclawek_22_04_1945.pdf;dokument_wojskowy;wysoka;TAK;;kluczowy dokument
+T777_012;GAZ;3;Gazety plakaty_p003.pdf;GAZ_003_fotografia_pieciu_zolnierzy.pdf;fotografia_wojskowa;wysoka;TAK;;
+T777_013;GAZ;5;Gazety plakaty_p005.pdf;GAZ_005_dziennik_popularny_11_02_1937_cala_strona.pdf;prasa;wysoka;TAK;;
+T777_014;GAZ;9;Gazety plakaty_p009.pdf;GAZ_009_wolna_polska_kosciuszkowcy_w_pierwszym_boju.pdf;prasa_wojenna;wysoka;TAK;;
+T777_015;GAZ;10;Gazety plakaty_p010.pdf;GAZ_010_z_rozkazu_do_zolnierzy_I_dywizji_11_10_1943.pdf;prasa_wojenna;wysoka;TAK;;
+T777_016;GAZ;13;Gazety plakaty_p013.pdf;GAZ_013_kc_ppr_huty_dabrowskie_zobowiazania_kongresowe.pdf;plakat_lub_wykres;wysoka;TAK;;
+T777_017;GAZ;15;Gazety plakaty_p015.pdf;GAZ_015_plakat_kongres_jednosci_klasy_robotniczej_08_12_1948.pdf;plakat;wysoka;TAK;;
+T777_018;GAZ;16;Gazety plakaty_p016.pdf;GAZ_016_wbh_caw_baczynski_jan_III_427_23.pdf;kwerenda_archiwalna;wysoka;TAK;;kluczowy nośnik identyfikacyjny
+T777_019;GAZ;17;Gazety plakaty_p017.pdf;GAZ_017_dyplom_mon_medal_zwyciestwa_i_wolnosci_1946.pdf;dyplom;wysoka;TAK;;kluczowy dokument
+T777_020;GAZ;18;Gazety plakaty_p018.pdf;GAZ_018_wolna_polska_scementowana_krwia.pdf;prasa_wojenna;wysoka;TAK;;
+T777_021;GAZ;19;Gazety plakaty_p019.pdf;GAZ_019_notatka_rekopis_spis_przedmiotow.pdf;notatka_rekopis;wysoka;TAK;;
+T777_022;GAZ;20;Gazety plakaty_p020.pdf;GAZ_020_banknot_100_marek_z_notatkami.pdf;pamietka_lub_notatka;wysoka;TAK;;
+T777_023;ZDJ;1;Zdjęcia komplety urzędnik nauczyciel żołnierz _p001.pdf;ZDJ_001_album_sheet_group_photos_A.pdf;fotografia_albumowa;wysoka;TAK;;
+T777_024;ZDJ;4;Zdjęcia komplety urzędnik nauczyciel żołnierz _p004.pdf;ZDJ_004_reverses_colonia_policyjna_1935.pdf;rewers_fotografii;wysoka;TAK;;kluczowy napis identyfikacyjny
+T777_025;ZDJ;5;Zdjęcia komplety urzędnik nauczyciel żołnierz _p005.pdf;ZDJ_005_album_atlases_and_photos_wide.pdf;material_szkolny_i_fotograficzny;wysoka;TAK;ZDJ_DUP_01;
+T777_026;ZDJ;8;Zdjęcia komplety urzędnik nauczyciel żołnierz _p008.pdf;ZDJ_008_atlas_volksschul_atlas_closeup.pdf;material_szkolny;wysoka;TAK;;
+T777_027;ZDJ;9;Zdjęcia komplety urzędnik nauczyciel żołnierz _p009.pdf;ZDJ_009_atlas_with_labels_and_group_photo.pdf;material_szkolny_i_fotograficzny;wysoka;TAK;;widoczna pieczec szkolna i podpisy
+T777_028;ZDJ;10;Zdjęcia komplety urzędnik nauczyciel żołnierz _p010.pdf;ZDJ_010_school_stamp_leipzig_gohlis_and_group_photo_closeup.pdf;material_szkolny_i_fotograficzny;wysoka;TAK;;
+T777_029;ZDJ;11;Zdjęcia komplety urzędnik nauczyciel żołnierz _p011.pdf;ZDJ_011_red_album_formal_photos_and_meeting.pdf;fotografia_albumowa;wysoka;TAK;;
+T777_030;ZDJ;14;Zdjęcia komplety urzędnik nauczyciel żołnierz _p014.pdf;ZDJ_014_red_album_mixed_photos_wide.pdf;fotografia_albumowa;wysoka;TAK;;
+T777_031;ZDJ;16;Zdjęcia komplety urzędnik nauczyciel żołnierz _p016.pdf;ZDJ_016_reverses_colonia_policyjna_1935_initials_signatures.pdf;rewers_fotografii;wysoka;TAK;;
+T777_032;ZDJ;17;Zdjęcia komplety urzędnik nauczyciel żołnierz _p017.pdf;ZDJ_017_reverses_colonia_policyjna_with_uniform_portrait.pdf;rewers_fotografii_i_portret;wysoka;TAK;;
+T777_033;ZDJ;18;Zdjęcia komplety urzędnik nauczyciel żołnierz _p018.pdf;ZDJ_018_reverses_notes_signature_and_colonia_policyjna_1936.pdf;rewers_fotografii;wysoka;TAK;;
+T777_034;ZDJ;19;Zdjęcia komplety urzędnik nauczyciel żołnierz _p019.pdf;ZDJ_019_uniform_portrait_and_wedding_photo.pdf;portret_i_fotografia_rodzinna;wysoka;TAK;;
+T777_035;ZDJ;20;Zdjęcia komplety urzędnik nauczyciel żołnierz _p020.pdf;ZDJ_020_handwritten_dedication_lwow_1938_and_note.pdf;rewers_fotografii;wysoka;TAK;;
