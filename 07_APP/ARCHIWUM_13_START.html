@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archiwum 13 SAS – Start</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --panel-2: #1e2330;
+      --line: #2d3443;
+      --text: #e8edf5;
+      --muted: #a9b4c7;
+      --accent: #c7a354;
+      --accent-2: #8db4ff;
+      --ok: #4fa36d;
+      --p: #c7a354;
+      --i: #8db4ff;
+      --r: #d98cff;
+      --h: #ff8f8f;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    a { color: var(--accent-2); text-decoration: none; }
+    .wrap { display: grid; grid-template-columns: 290px 1fr; min-height: 100vh; }
+    .side { background: linear-gradient(180deg, #131720 0%, #0f1115 100%); border-right: 1px solid var(--line); padding: 22px 18px; }
+    .main { padding: 22px; }
+    .brand { margin-bottom: 18px; }
+    .brand h1 { margin: 0 0 6px; font-size: 24px; letter-spacing: 0.4px; }
+    .brand p { margin: 0; color: var(--muted); }
+    .pillrow { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 18px; }
+    .pill { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; color: var(--muted); background: rgba(255,255,255,0.02); }
+    .nav { display: grid; gap: 8px; }
+    .nav button, .filter button {
+      width: 100%; text-align: left; border: 1px solid var(--line); background: var(--panel); color: var(--text);
+      padding: 10px 12px; border-radius: 12px; cursor: pointer; transition: 0.15s ease;
+    }
+    .nav button:hover, .filter button:hover, .nav button.active, .filter button.active { background: var(--panel-2); border-color: var(--accent); }
+    .meta { margin-top: 20px; color: var(--muted); font-size: 13px; }
+    .toolbar { display: grid; grid-template-columns: 1fr 420px; gap: 12px; margin-bottom: 18px; }
+    .search, .info, .card, .detail, .timeline, .table, .hero { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; }
+    .search input { width: 100%; background: transparent; border: 0; color: var(--text); padding: 15px 16px; font-size: 15px; outline: none; }
+    .info { padding: 14px 16px; color: var(--muted); }
+    .hero { padding: 18px; margin-bottom: 18px; background: radial-gradient(circle at top right, rgba(199,163,84,0.12), transparent 28%), var(--panel); }
+    .hero h2 { margin: 0 0 8px; font-size: 24px; }
+    .hero p { margin: 0; color: var(--muted); max-width: 860px; }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-top: 16px; }
+    .stat { background: rgba(255,255,255,0.02); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+    .stat .n { font-size: 22px; font-weight: 700; }
+    .stat .l { color: var(--muted); font-size: 13px; }
+    .filter { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 18px; }
+    .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; }
+    .cards { display: grid; gap: 12px; }
+    .card { padding: 14px; cursor: pointer; transition: 0.15s ease; }
+    .card:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .topline { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .title { font-size: 18px; font-weight: 700; margin: 0 0 4px; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 14px; }
+    .badge { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+    .badge.P { background: rgba(199,163,84,0.15); color: var(--p); }
+    .badge.I { background: rgba(141,180,255,0.15); color: var(--i); }
+    .badge.R { background: rgba(217,140,255,0.15); color: var(--r); }
+    .badge.H { background: rgba(255,143,143,0.15); color: var(--h); }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .tag { color: var(--muted); border: 1px solid var(--line); padding: 4px 8px; border-radius: 999px; font-size: 12px; }
+    .detail { padding: 18px; position: sticky; top: 18px; }
+    .detail h3 { margin: 0 0 8px; font-size: 22px; }
+    .detail p { color: var(--muted); }
+    .kv { display: grid; grid-template-columns: 120px 1fr; gap: 8px 12px; margin: 16px 0; }
+    .k { color: var(--muted); }
+    .v { color: var(--text); }
+    .section { margin-top: 18px; }
+    .section h4 { margin: 0 0 8px; font-size: 15px; color: var(--accent); }
+    .timeline, .table { padding: 14px 16px; margin-top: 18px; }
+    .timeline ul, .table ul { list-style: none; padding: 0; margin: 0; }
+    .timeline li, .table li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .timeline li:last-child, .table li:last-child { border-bottom: 0; }
+    .muted { color: var(--muted); }
+    .empty { padding: 20px; color: var(--muted); text-align: center; border: 1px dashed var(--line); border-radius: 16px; }
+    .footer { margin-top: 18px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 1120px) {
+      .wrap { grid-template-columns: 1fr; }
+      .side { border-right: 0; border-bottom: 1px solid var(--line); }
+      .toolbar, .grid, .stats { grid-template-columns: 1fr; }
+      .filter { grid-template-columns: repeat(2, 1fr); }
+      .detail { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <aside class="side">
+      <div class="brand">
+        <h1>ARCHIWUM 13 SAS</h1>
+        <p>Klikalny front roboczy archiwum rodzinno-historycznego.</p>
+      </div>
+      <div class="pillrow">
+        <span class="pill">Tryb roboczy</span>
+        <span class="pill">Offline</span>
+        <span class="pill">Start lokalny</span>
+      </div>
+      <div class="nav">
+        <button class="navbtn active" data-view="all">Wszystkie obiekty</button>
+        <button class="navbtn" data-view="P">Warstwa [P]</button>
+        <button class="navbtn" data-view="I">Warstwa [I]</button>
+        <button class="navbtn" data-view="R">Warstwa [R]</button>
+        <button class="navbtn" data-view="H">Warstwa [H]</button>
+      </div>
+      <div class="meta">
+        <p><strong>Stan:</strong> działający front startowy</p>
+        <p><strong>Cel:</strong> dać realny punkt wejścia do archiwum zanim stanie pełna baza serwerowa.</p>
+        <p><strong>Zakres:</strong> zbiory, osoby, miejsca, oś czasu, opis obiektów.</p>
+      </div>
+    </aside>
+    <main class="main">
+      <section class="hero">
+        <h2>Punkt wejścia do realnego Archiwum 13</h2>
+        <p>To nie jest już „archiwum w powietrzu”, tylko działający front startowy. Można wejść, filtrować obiekty, czytać opisy i porządkować strukturę. Następny etap to podpinanie prawdziwych skanów, zdjęć i PDF-ów.</p>
+        <div class="stats" id="stats"></div>
+      </section>
+      <div class="toolbar">
+        <div class="search"><input id="search" type="search" placeholder="Szukaj po tytule, osobie, miejscu, sygnaturze lub opisie"></div>
+        <div class="info">Wersja startowa pracuje bez serwera. Po rozbudowie może zostać przeniesiona do Omeka S albo innego systemu archiwalnego.</div>
+      </div>
+      <div class="filter">
+        <button class="filterbtn active" data-type="all">Wszystkie typy</button>
+        <button class="filterbtn" data-type="document">Dokumenty</button>
+        <button class="filterbtn" data-type="photo">Fotografie</button>
+        <button class="filterbtn" data-type="note">Notatki i rekordy</button>
+      </div>
+      <div class="grid">
+        <section>
+          <div class="cards" id="cards"></div>
+          <div class="timeline">
+            <h3>Oś czasu robocza</h3>
+            <ul id="timeline"></ul>
+          </div>
+          <div class="table">
+            <h3>Osoby i miejsca</h3>
+            <ul id="peoplePlaces"></ul>
+          </div>
+        </section>
+        <aside class="detail" id="detail"></aside>
+      </div>
+      <div class="footer">Repozytorium: komendantmb/archiwum_13_sas • katalog 07_APP • front startowy do dalszego zasilenia.</div>
+    </main>
+  </div>
+  <script>
+    const items = [
+      {
+        id: 'A13-001',
+        title: 'Rdzeń Archiwum 13 SAS',
+        subtitle: 'Struktura repozytorium i model pracy',
+        layer: 'P',
+        type: 'note',
+        date: '2026-04-21',
+        person: 'Zespół roboczy Archiwum 13',
+        place: 'Repozytorium prywatne',
+        signature: 'README.md',
+        description: 'Podstawowy opis struktury pracy: 01_P, 02_I, 03_R, 04_H, 05_T777, 06_NOTATKI. To główny punkt odniesienia dla porządku archiwalnego.',
+        tags: ['struktura', 'repozytorium', 'metoda'],
+        source: 'README główny repozytorium',
+        note: 'To rekord techniczny, nie dowód historyczny.',
+      },
+      {
+        id: 'A13-002',
+        title: 'Teczka 777 – warstwa dowodowa',
+        subtitle: 'Rejestr materiału dowodowego oparty wyłącznie na [P]',
+        layer: 'P',
+        type: 'document',
+        date: '2026-04-21',
+        person: 'Jan Stanisław Baczyński',
+        place: '05_T777',
+        signature: '05_T777/rejestr_t777.csv',
+        description: 'Rdzeń dowodowy projektu. Teczka 777 ma być zasilana wyłącznie materiałem pierwotnym [P], bez domysłów i bez mieszania warstw.',
+        tags: ['T777', 'dowód', 'P'],
+        source: 'Plik rejestru T777',
+        note: 'Wymaga dalszego zasilenia konkretnymi rekordami źródłowymi.',
+      },
+      {
+        id: 'A13-003',
+        title: 'Zasady nazewnictwa',
+        subtitle: 'Porządek metadanych i logika nazw',
+        layer: 'I',
+        type: 'document',
+        date: '2026-04-21',
+        person: 'Archiwum 13 SAS',
+        place: '06_NOTATKI',
+        signature: '06_NOTATKI/zasady_nazewnictwa.md',
+        description: 'Dokument roboczy porządkujący sposób nazywania plików, rekordów i materiałów. Kluczowy do późniejszego importu do aplikacji serwerowej.',
+        tags: ['metadane', 'nazewnictwo', 'porządek'],
+        source: 'Notatka techniczna',
+        note: 'Materiał roboczy warstwy organizacyjnej.',
+      },
+      {
+        id: 'A13-004',
+        title: 'Linia Kresowa',
+        subtitle: 'Sekcja tematyczna do zasilenia skanami metryk i archiwaliów',
+        layer: 'H',
+        type: 'note',
+        date: '1827–1927',
+        person: 'Michał Baczyński i linia galicyjska',
+        place: 'Zabłotów, Jazłowiec, Demycze, Buczacz',
+        signature: 'SEKCJA-TEMATYCZNA',
+        description: 'Szkielet działu przeznaczonego do późniejszego podpięcia ksiąg metrykalnych, legitymacji, map i relacji pomocniczych. Na ten moment to kontener koncepcyjny.',
+        tags: ['genealogia', 'Kresy', 'Galicja'],
+        source: 'Sekcja projektowa',
+        note: 'Wymaga podpięcia realnych skanów.',
+      },
+      {
+        id: 'A13-005',
+        title: 'Węzeł 12.05.1982',
+        subtitle: 'Matryca śmierci Jana Stanisława Baczyńskiego',
+        layer: 'R',
+        type: 'note',
+        date: '1982-05-12',
+        person: 'Jan Stanisław Baczyński',
+        place: 'Chodzież / Warszawa – oś badawcza',
+        signature: 'MATRYCA-1982',
+        description: 'Centralna sekcja badawcza służąca do porządkowania źródeł, relacji i dokumentów wokół daty 12.05.1982. Tu mają trafiać akty, wpisy USC, ślady medyczne, zakładowe i relacyjne.',
+        tags: ['1982', 'śmierć', 'śledztwo'],
+        source: 'Oś badawcza projektu',
+        note: 'Sekcja wymaga dalszego wypełnienia twardym materiałem.',
+      },
+      {
+        id: 'A13-006',
+        title: 'Front aplikacyjny 07_APP',
+        subtitle: 'Warstwa wejścia dla użytkownika i gościa',
+        layer: 'I',
+        type: 'document',
+        date: '2026-04-23',
+        person: 'Archiwum 13 SAS',
+        place: '07_APP',
+        signature: '07_APP/ARCHIWUM_13_START.html',
+        description: 'Plik startowy uruchamiany bez serwera. Ma pokazać strukturę archiwum, dać filtrowanie, klikane karty i punkt wejścia do dalszej rozbudowy.',
+        tags: ['aplikacja', 'frontend', 'start'],
+        source: 'Plik HTML',
+        note: 'Działa lokalnie po otwarciu w przeglądarce.',
+      }
+    ];
+
+    let currentLayer = 'all';
+    let currentType = 'all';
+    let query = '';
+    let selectedId = items[0].id;
+
+    const cardsEl = document.getElementById('cards');
+    const detailEl = document.getElementById('detail');
+    const timelineEl = document.getElementById('timeline');
+    const peoplePlacesEl = document.getElementById('peoplePlaces');
+    const statsEl = document.getElementById('stats');
+    const searchEl = document.getElementById('search');
+
+    function filteredItems() {
+      return items.filter(item => {
+        const okLayer = currentLayer === 'all' || item.layer === currentLayer;
+        const okType = currentType === 'all' || item.type === currentType;
+        const blob = [item.title, item.subtitle, item.person, item.place, item.signature, item.description, item.tags.join(' ')].join(' ').toLowerCase();
+        const okQuery = !query || blob.includes(query.toLowerCase());
+        return okLayer && okType && okQuery;
+      });
+    }
+
+    function renderStats() {
+      const p = items.filter(i => i.layer === 'P').length;
+      const i = items.filter(i => i.layer === 'I').length;
+      const r = items.filter(i => i.layer === 'R').length;
+      const h = items.filter(i => i.layer === 'H').length;
+      statsEl.innerHTML = `
+        <div class="stat"><div class="n">${items.length}</div><div class="l">obiektów startowych</div></div>
+        <div class="stat"><div class="n">${p}</div><div class="l">warstwa [P]</div></div>
+        <div class="stat"><div class="n">${i + r + h}</div><div class="l">warstwy pomocnicze</div></div>
+        <div class="stat"><div class="n">07_APP</div><div class="l">punkt wejścia</div></div>
+      `;
+    }
+
+    function renderCards() {
+      const list = filteredItems();
+      if (!list.length) {
+        cardsEl.innerHTML = '<div class="empty">Brak wyników dla bieżącego filtra.</div>';
+        detailEl.innerHTML = '<h3>Brak wyboru</h3><p class="muted">Zmień filtr albo wyszukiwane hasło.</p>';
+        return;
+      }
+      if (!list.find(i => i.id === selectedId)) selectedId = list[0].id;
+      cardsEl.innerHTML = list.map(item => `
+        <article class="card" data-id="${item.id}">
+          <div class="topline">
+            <div>
+              <h3 class="title">${item.title}</h3>
+              <p class="subtitle">${item.subtitle}</p>
+            </div>
+            <span class="badge ${item.layer}">[${item.layer}]</span>
+          </div>
+          <div class="tags">
+            <span class="tag">${labelType(item.type)}</span>
+            <span class="tag">${item.date}</span>
+            <span class="tag">${item.place}</span>
+          </div>
+        </article>
+      `).join('');
+
+      Array.from(document.querySelectorAll('.card')).forEach(card => {
+        card.addEventListener('click', () => {
+          selectedId = card.dataset.id;
+          renderDetail();
+        });
+      });
+      renderDetail();
+    }
+
+    function labelType(type) {
+      return ({ document: 'Dokument', photo: 'Fotografia', note: 'Notatka / rekord' })[type] || type;
+    }
+
+    function renderDetail() {
+      const item = items.find(i => i.id === selectedId);
+      if (!item) return;
+      detailEl.innerHTML = `
+        <span class="badge ${item.layer}">[${item.layer}]</span>
+        <h3>${item.title}</h3>
+        <p>${item.subtitle}</p>
+        <div class="kv">
+          <div class="k">ID</div><div class="v">${item.id}</div>
+          <div class="k">Typ</div><div class="v">${labelType(item.type)}</div>
+          <div class="k">Data</div><div class="v">${item.date}</div>
+          <div class="k">Osoba</div><div class="v">${item.person}</div>
+          <div class="k">Miejsce</div><div class="v">${item.place}</div>
+          <div class="k">Sygnatura</div><div class="v">${item.signature}</div>
+          <div class="k">Źródło</div><div class="v">${item.source}</div>
+        </div>
+        <div class="section">
+          <h4>Opis</h4>
+          <p>${item.description}</p>
+        </div>
+        <div class="section">
+          <h4>Uwagi</h4>
+          <p>${item.note}</p>
+        </div>
+        <div class="section">
+          <h4>Tagi</h4>
+          <div class="tags">${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+        </div>
+      `;
+    }
+
+    function renderTimeline() {
+      const list = [...items].sort((a, b) => String(a.date).localeCompare(String(b.date)));
+      timelineEl.innerHTML = list.map(item => `
+        <li><strong>${item.date}</strong> • ${item.title}<br><span class="muted">${item.place}</span></li>
+      `).join('');
+    }
+
+    function renderPeoplePlaces() {
+      const list = items.map(item => `
+        <li><strong>${item.person}</strong><br><span class="muted">${item.place}</span></li>
+      `).join('');
+      peoplePlacesEl.innerHTML = list;
+    }
+
+    document.querySelectorAll('.navbtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.navbtn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentLayer = btn.dataset.view;
+        renderCards();
+      });
+    });
+
+    document.querySelectorAll('.filterbtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentType = btn.dataset.type;
+        renderCards();
+      });
+    });
+
+    searchEl.addEventListener('input', e => {
+      query = e.target.value.trim();
+      renderCards();
+    });
+
+    renderStats();
+    renderCards();
+    renderTimeline();
+    renderPeoplePlaces();
+  </script>
+</body>
+</html>
