@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARCHIWUM 13 SAS — Galeria Kustosza</title>
+  <style>
+    :root { --bg:#111; --panel:#1b1b1b; --card:#242424; --text:#f3f3f3; --muted:#b9b9b9; --line:#3a3a3a; --accent:#d6b15e; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    header { padding:28px 18px 18px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#1d1d1d,#111); }
+    main { max-width:1100px; margin:0 auto; padding:18px; }
+    h1 { margin:0 0 8px; font-size:28px; letter-spacing:.3px; }
+    h2 { margin:28px 0 12px; font-size:20px; color:var(--accent); }
+    p { color:var(--muted); margin:8px 0; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .top { max-width:1100px; margin:0 auto; }
+    .notice { border:1px solid var(--line); background:var(--panel); padding:14px; border-radius:12px; margin:16px 0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px; min-height:180px; }
+    .thumb { height:86px; border-radius:10px; border:1px dashed #5a5a5a; display:flex; align-items:center; justify-content:center; color:#999; margin-bottom:12px; background:#171717; text-align:center; padding:8px; }
+    .id { font-size:12px; color:#999; margin-bottom:4px; }
+    .title { font-size:17px; font-weight:bold; margin-bottom:8px; }
+    .status { display:inline-block; padding:2px 8px; border:1px solid var(--accent); color:var(--accent); border-radius:999px; font-size:12px; margin-top:8px; }
+    .links { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    .button { display:inline-block; border:1px solid var(--accent); padding:10px 12px; border-radius:10px; background:#171717; }
+    footer { border-top:1px solid var(--line); padding:18px; color:#888; margin-top:30px; font-size:13px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>ARCHIWUM 13 SAS — Galeria Kustosza</h1>
+    <p>Prywatny widok roboczy. Tu są najważniejsze obiekty i skany wskazane przez rejestr archiwum. Warstwa obrazów zostanie podpięta po wgraniu plików JPG/PNG do repo.</p>
+  </div>
+</header>
+<main>
+  <section class="notice">
+    <strong>Stan techniczny:</strong>
+    <p>Repo zawiera rejestry i opisy obiektów. Nie zawiera jeszcze osobnych plików graficznych JPG/PNG dla pełnej galerii. Dlatego ta wersja działa jako czytelna mapa obiektów, bez martwych miniaturek.</p>
+    <div class="links">
+      <a class="button" href="../05_T777/rejestr_t777.csv">Rejestr T777</a>
+      <a class="button" href="../06_NOTATKI/ARTEFAKTY_RODU.csv">Artefakty rodu</a>
+      <a class="button" href="../02_I/pozycje_prasowe.csv">Pozycje prasowe</a>
+      <a class="button" href="./KUSTOSZ_START_AWARYJNY.md">Wejście awaryjne</a>
+    </div>
+  </section>
+
+  <h2>10 najważniejszych obrazów / skanów do galerii</h2>
+  <div class="grid">
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">ART_001</div><div class="title">Volksschul-Atlas</div><p>Atlas szkolny ze stemplem własnościowym szkoły i proweniencją instytucjonalną.</p><span class="status">potwierdzony</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">ART_002</div><div class="title">Atlas fuer mittelschulen</div><p>Atlas szkolny z czytelnymi kartami tytułowymi i układem atlasu.</p><span class="status">potwierdzony częściowo</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">ART_003</div><div class="title">Poznańskie 1955</div><p>Publikacja z 1955 roku zachowana w archiwum rodzinnym.</p><span class="status">potwierdzony</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">ART_004</div><div class="title">Widelec i łyżeczka</div><p>Sztućce sfotografowane na skali pomiarowej z dopiskiem IPN Po 666/544.</p><span class="status">potwierdzony częściowo</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">ART_005</div><div class="title">Album Absolwentów AGH 1974–1979</div><p>Album z materiałami jubileuszowymi i dedykacyjnymi związanymi z Chodzieżą.</p><span class="status">potwierdzony</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">T777_027</div><div class="title">Karta Jana Baczyńskiego AGH</div><p>Kandydat do najważniejszego obrazu biograficznego z bloku AGH.</p><span class="status">w rejestrze T777</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">PRASA_1978</div><div class="title">Głos Wielkopolski, 17 II 1978</div><p>Materiał prasowy potwierdzający funkcję Jana Baczyńskiego w Wojewódzkiej Komisji Rewizyjnej PZPR.</p><span class="status">źródło prasowe</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">T777_1980</div><div class="title">Dokumenty Solidarności 3.12.1980</div><p>Wątek konfliktu zakładowego. Do pokazania dopiero po podpięciu właściwych skanów.</p><span class="status">do spięcia ze skanem</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">WOJSKO_1945</div><div class="title">Blok wojskowy Jana</div><p>Rozkazy, dyplomy i materiały powojenne. Główna oś biografii źródłowej.</p><span class="status">rdzeń [P]</span></article>
+    <article class="card"><div class="thumb">miejsce na obraz</div><div class="id">ROD_MB</div><div class="title">Materiał rodzinny MB</div><p>Obiekty rodzinne i znaki proweniencyjne do dalszego makro-odczytu.</p><span class="status">do rozwinięcia</span></article>
+  </div>
+
+  <section class="notice">
+    <strong>Jak to zamienić w pełną galerię obrazów:</strong>
+    <p>Do repo trzeba dodać katalog <code>07_APP/img/</code> i wrzucić tam 10 plików: <code>ART_001.jpg</code> do <code>ART_010.jpg</code>. Wtedy miniatury zostaną zastąpione prawdziwymi skanami, a kliknięcie otworzy pełny obraz.</p>
+  </section>
+</main>
+<footer>
+  ARCHIWUM 13 SAS. Widok roboczy Kustosza. Zasada: Teczka 777 opiera się wyłącznie na materiale [P].
+</footer>
+</body>
+</html>
