@@ -1,0 +1,11 @@
+ID_OBRAZU;ID_T777;NAZWA_ROBOCZA;WARSTWA;STATUS;CO_WIDAC;CZEGO_NIE_WOLNO_TWIERDZIC;NASTEPNY_RUCH
+IPN-IMG-001;ART_001;Volksschul-Atlas;P;potwierdzony;Atlas szkolny ze stemplem/proweniencją instytucjonalną;Nie dowodzi samodzielnie pracy Michała Baczyńskiego w konkretnej szkole;Wgrać skan ART_001.jpg i dodać stronę/nośnik
+IPN-IMG-002;ART_002;Atlas fuer mittelschulen;P;potwierdzony_czesciowo;Karty tytułowe i układ atlasu;Nie przypisywać funkcji rodzinnej bez podpisu/dedykacji;Wgrać skan ART_002.jpg i zrobić zbliżenie pieczęci
+IPN-IMG-003;ART_003;Poznańskie 1955;P/I;potwierdzony;Publikacja zachowana w archiwum rodzinnym;Nie przypisywać automatycznie do konkretnej osoby;Wgrać skan ART_003.jpg i opisać proweniencję
+IPN-IMG-004;ART_004;Widelec i łyżeczka;P;potwierdzony_czesciowo;Sztućce na skali pomiarowej z dopiskiem IPN Po 666/544;Nie przesądzać monogramu MB bez makro;Wgrać ART_004.jpg i wykonać makro monogramu
+IPN-IMG-005;ART_005;Album AGH Kraków-Chodzież 1974-1979;P;potwierdzony;Album jubileuszowy i dedykacyjny;Nie rekonstruować relacji politycznych ponad tekst;Wgrać ART_005.jpg i wydzielić kartę Jana
+IPN-IMG-006;T777_027;Karta Jana Baczyńskiego AGH;P;w_rejestrze_T777;Karta/dedykacja powiązana z Janem Baczyńskim i blokiem AGH;Nie twierdzić więcej niż wynika z treści karty;Wgrać ART_006.jpg i powiązać z T777_027
+IPN-IMG-007;PRASA_1978;Głos Wielkopolski 17 II 1978;I/P_prasa;potwierdzony_prasowo;Jan Baczyński wskazany w składzie Wojewódzkiej Komisji Rewizyjnej PZPR;Prasa nie zastępuje akt partyjnych;Dodać do pozycje_prasowe.csv i wskazać stronę
+IPN-IMG-008;T777_1980;Dokumenty Solidarności 3.12.1980;P;do_transkrypcji;Blok dokumentów wystąpień i zarzutów z grudnia 1980;Nie rozwijać pełnej listy bez transkrypcji;Ustalić nośnik/strony i zrobić transkrypcję
+IPN-IMG-009;WOJSKO_1945;Blok wojskowy Jana;P;rdzen_biograficzny;Dokumenty powojenne, rozkazy, dyplomy, materiał służbowy;Nie dopowiadać szczegółów działań bez akt służbowych;Powiązać z konkretnymi rekordami T777_001-T777_005
+IPN-IMG-010;ZGON_1982;Węzeł 12.05.1982;H/P_do_ustalenia;kwerenda;Brak wystarczającego zestawu dokumentów medycznych/USC w galerii;Nie przesądzać przyczyny śmierci ani mechanizmu zdarzenia;Utworzyć osobny pakiet kwerendalny USC/szpital/pogotowie
