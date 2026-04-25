@@ -1,0 +1,4 @@
+const documents=[{id:"T777-024",title:"Głos Wielkopolski 1978",category:"Prasa",file:"../GW_1978_Wyd.AB_0039.pdf"},{id:"DOC-191",title:"Dokumenty 191-286",category:"Dokumenty",file:"../Dokumenty Baczyńscy _191-286.pdf"}];
+function render(){const q=document.getElementById('search').value.toLowerCase();const c=document.getElementById('catalog');c.innerHTML='';documents.filter(d=>d.title.toLowerCase().includes(q)).forEach(d=>{let el=document.createElement('div');el.className='card';el.innerHTML=`<h3>${d.title}</h3><button onclick="openPdf('${d.file}')">Otwórz</button>`;c.appendChild(el);});}
+function openPdf(f){document.getElementById('pdf-frame').src=f;}
+render();
