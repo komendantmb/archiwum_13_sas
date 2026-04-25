@@ -1,65 +1,41 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Archiwum 13 SAS | Teczka 777</title>
-  <style>
-    :root { --bg:#101114; --panel:#191b20; --panel2:#22252c; --text:#f2efe7; --muted:#b8b2a6; --gold:#c8a45d; --line:#3a3440; --danger:#b45b5b; }
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
-    header{padding:28px 22px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#15161a,#272018)}
-    h1{margin:0;font-size:30px;letter-spacing:.5px} .sub{color:var(--muted);margin-top:8px;max-width:980px;line-height:1.5}
-    main{display:grid;grid-template-columns:360px 1fr;min-height:calc(100vh - 118px)}
-    aside{border-right:1px solid var(--line);background:var(--panel);padding:18px;overflow:auto}.content{padding:18px;overflow:auto}
-    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.tab{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:9px 11px;border-radius:10px;cursor:pointer}.tab.active{border-color:var(--gold);color:var(--gold)}
-    .search{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#0d0e11;color:var(--text);margin-bottom:12px}
-    .item{border:1px solid var(--line);background:var(--panel2);border-radius:12px;padding:12px;margin:10px 0;cursor:pointer}.item:hover{border-color:var(--gold)}.item.active{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset}
-    .code{font-size:12px;color:var(--gold);font-weight:bold}.title{font-size:16px;margin:5px 0}.meta{font-size:12px;color:var(--muted);line-height:1.45}
-    .viewer{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:16px;min-height:520px}.viewer h2{margin-top:0}.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:4px 8px;border-radius:999px;font-size:12px;margin-right:6px}.warn{border-color:var(--danger);color:#ffb4b4}
-    iframe{width:100%;height:72vh;border:1px solid var(--line);border-radius:10px;background:#fff}.imgbox img{max-width:100%;border-radius:10px;border:1px solid var(--line);background:#fff}.empty{color:var(--muted);line-height:1.6}.btn{display:inline-block;margin:8px 8px 8px 0;padding:10px 12px;border-radius:10px;border:1px solid var(--line);color:var(--text);text-decoration:none;background:var(--panel2)}.btn:hover{border-color:var(--gold);color:var(--gold)}
-    table{border-collapse:collapse;width:100%;margin-top:12px}td,th{border:1px solid var(--line);padding:8px;text-align:left}th{color:var(--gold)}
-    @media(max-width:850px){main{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line)}iframe{height:65vh}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archiwum 13 SAS | Teczka 777</title>
+<style>
+:root{--bg:#0d0b08;--panel:#17120c;--panel2:#21180f;--paper:#f3ead8;--muted:#cbb894;--gold:#b28a3d;--line:#3b2d1f;--red:#8b2b2b;--green:#4d7a45}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#2b2015 0,#0d0b08 48%,#060504 100%);color:var(--paper);font:15px/1.5 Arial,Helvetica,sans-serif}header{padding:26px 22px;border-bottom:1px solid var(--line);background:linear-gradient(145deg,rgba(178,138,61,.18),rgba(23,18,12,.96))}h1{margin:0;font-size:32px;letter-spacing:.4px}.sub{color:var(--muted);margin-top:8px;max-width:1100px}.layout{display:grid;grid-template-columns:390px 1fr;min-height:calc(100vh - 120px)}aside{border-right:1px solid var(--line);background:rgba(23,18,12,.96);padding:16px;overflow:auto}.content{padding:18px;overflow:auto}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tab{border:1px solid var(--line);background:var(--panel2);color:var(--paper);padding:8px 10px;border-radius:10px;cursor:pointer}.tab.active{border-color:var(--gold);color:#f3d18a}.search{width:100%;padding:11px;border-radius:10px;border:1px solid var(--line);background:#090806;color:var(--paper);margin-bottom:10px}.stats{color:var(--muted);font-size:13px;margin:8px 0 12px}.item{border:1px solid var(--line);background:rgba(33,24,15,.96);border-radius:13px;padding:11px;margin:9px 0;cursor:pointer}.item:hover,.item.active{border-color:var(--gold)}.code{font-size:12px;color:#f3d18a;font-weight:bold}.title{font-size:15px;margin:4px 0}.meta{font-size:12px;color:var(--muted)}.viewer{border:1px solid var(--line);border-radius:16px;background:rgba(23,18,12,.96);padding:18px;min-height:540px}.badge{display:inline-block;border:1px solid var(--gold);color:#f3d18a;padding:4px 8px;border-radius:999px;font-size:12px;margin:0 6px 6px 0}.badge.p{border-color:var(--green);color:#c6efbf}.badge.warn{border-color:var(--red);color:#ffb6b6}h2{margin:8px 0 10px;color:#f4d28a}.muted{color:var(--muted)}.btn{display:inline-block;margin:7px 7px 7px 0;padding:10px 12px;border-radius:10px;border:1px solid var(--line);color:#f3d18a;text-decoration:none;background:var(--panel2)}.btn:hover{border-color:var(--gold)}table{border-collapse:collapse;width:100%;margin-top:12px}td,th{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:#f4d28a;width:210px}.panel{border:1px solid var(--line);background:#100c08;border-radius:12px;padding:12px;margin-top:12px}iframe{width:100%;height:72vh;border:1px solid var(--line);border-radius:10px;background:#fff}.missing{border-left:4px solid var(--red);padding:10px 12px;background:#170d0d;color:#ffd1d1;border-radius:8px;margin-top:10px}.ok{border-left:4px solid var(--green);padding:10px 12px;background:#0e170d;color:#d9ffd3;border-radius:8px;margin-top:10px}@media(max-width:900px){.layout{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line)}iframe{height:65vh}}
+</style>
 </head>
 <body>
-<header>
-  <h1>Archiwum 13 SAS</h1>
-  <div class="sub">Klikany rdzeń archiwum T777. To jest publiczny punkt wejścia: dokumenty pierwotne, indeksy, zdjęcia, PDF i metadane. Pliki fizyczne należy wkładać do katalogów <b>assets/pdf</b> i <b>assets/img</b>.</div>
-</header>
-<main>
-  <aside>
-    <div class="tabs">
-      <button class="tab active" data-filter="all">Wszystko</button>
-      <button class="tab" data-filter="pdf">PDF</button>
-      <button class="tab" data-filter="image">Zdjęcia</button>
-      <button class="tab" data-filter="record">Rejestry</button>
-    </div>
-    <input id="search" class="search" placeholder="Szukaj: Jan, IPN, T777, Buczacz..." />
-    <div id="list"></div>
-  </aside>
-  <section class="content"><div id="viewer" class="viewer"></div></section>
-</main>
+<header><h1>Archiwum 13 SAS</h1><div class="sub">Publiczny punkt wejścia do Teczki 777. Strona ładuje realny rejestr <b>05_T777/rejestr_t777.csv</b>, pokazuje rekordy [P], filtruje je i wskazuje, które pliki trzeba fizycznie wgrać do repo albo hostingu.</div></header>
+<div class="layout">
+<aside>
+<div class="tabs"><button class="tab active" data-filter="all">Wszystko</button><button class="tab" data-filter="FOTO">Foto</button><button class="tab" data-filter="DOK">Dok</button><button class="tab" data-filter="PRASA">Prasa</button><button class="tab" data-filter="NOTATKA_SB">SB</button><button class="tab" data-filter="JAN">Jan</button></div>
+<input id="search" class="search" placeholder="Szukaj: Jan, WYKOP, Buczacz, Włocławek...">
+<div class="stats" id="stats">Ładowanie rejestru...</div><div id="list"></div>
+</aside>
+<main class="content"><section id="viewer" class="viewer"><h2>Ładowanie archiwum...</h2><p class="muted">Jeżeli widzisz ten ekran dłużej, otwórz stronę przez GitHub Pages, Netlify albo lokalny serwer, nie przez goły plik z dysku.</p></section></main>
+</div>
 <script>
-const records = [
- {id:'START', type:'record', title:'Mapa wejścia do Archiwum 13 SAS', date:'2026-04-25', status:'DZIAŁA', path:'README.md', desc:'Główna mapa repozytorium i logiczny opis struktury pracy.'},
- {id:'T777-REJESTR', type:'record', title:'Rejestr Teczki 777', date:'robocze', status:'CSV', path:'05_T777/rejestr_t777.csv', desc:'Centralny rejestr materiału dowodowego Teczki 777.'},
- {id:'ARTEFAKTY', type:'record', title:'Rejestr artefaktów rodu', date:'robocze', status:'CSV', path:'06_NOTATKI/ARTEFAKTY_RODU.csv', desc:'Rejestr artefaktów rodzinnych, pamiątek, obiektów i nośników.'},
- {id:'PRASA', type:'record', title:'Rejestr pozycji prasowych', date:'robocze', status:'CSV', path:'02_I/pozycje_prasowe.csv', desc:'Indeks pozycji prasowych i wtórnych.'},
- {id:'IPN-JAN', type:'record', title:'Indeks etapu IPN / Jan', date:'2026-04-23', status:'MD', path:'06_NOTATKI/index_ipn_jan.md', desc:'Punkt wejścia do etapu IPN dotyczącego Jana Stanisława Baczyńskiego.'},
- {id:'P001', type:'pdf', title:'Miejsce na PDF P001', date:'do wpięcia', status:'BRAK PLIKU', path:'assets/pdf/P001.pdf', desc:'Wrzuć plik jako assets/pdf/P001.pdf, a podgląd zacznie działać automatycznie.'},
- {id:'P002', type:'pdf', title:'Miejsce na PDF P002', date:'do wpięcia', status:'BRAK PLIKU', path:'assets/pdf/P002.pdf', desc:'Wrzuć plik jako assets/pdf/P002.pdf.'},
- {id:'IMG001', type:'image', title:'Miejsce na zdjęcie IMG001', date:'do wpięcia', status:'BRAK PLIKU', path:'assets/img/IMG001.jpg', desc:'Wrzuć zdjęcie jako assets/img/IMG001.jpg.'},
- {id:'IMG002', type:'image', title:'Miejsce na zdjęcie IMG002', date:'do wpięcia', status:'BRAK PLIKU', path:'assets/img/IMG002.jpg', desc:'Wrzuć zdjęcie jako assets/img/IMG002.jpg.'}
-];
-let filter='all';
-const list=document.getElementById('list'), viewer=document.getElementById('viewer'), search=document.getElementById('search');
-function renderList(){const q=search.value.toLowerCase(); list.innerHTML=''; records.filter(r=>(filter==='all'||r.type===filter)&&Object.values(r).join(' ').toLowerCase().includes(q)).forEach((r,i)=>{const el=document.createElement('div');el.className='item';el.innerHTML=`<div class="code">${r.id}</div><div class="title">${r.title}</div><div class="meta">${r.type.toUpperCase()} · ${r.date} · ${r.status}</div>`;el.onclick=()=>openRecord(r,el);list.appendChild(el);});}
-function openRecord(r){document.querySelectorAll('.item').forEach(x=>x.classList.remove('active'));event?.currentTarget?.classList.add('active');let body=`<span class="badge">${r.type}</span><span class="badge ${r.status.includes('BRAK')?'warn':''}">${r.status}</span><h2>${r.id}: ${r.title}</h2><p class="empty">${r.desc}</p><table><tr><th>Ścieżka</th><td>${r.path}</td></tr><tr><th>Data/status</th><td>${r.date}</td></tr></table><p><a class="btn" href="${r.path}" target="_blank">Otwórz plik bezpośrednio</a><a class="btn" href="https://github.com/komendantmb/archiwum_13_sas" target="_blank">Repo GitHub</a></p>`;
- if(r.type==='pdf') body += `<iframe src="${r.path}"></iframe><p class="empty">Jeżeli tu jest biała strona albo 404, to znaczy, że fizyczny PDF nie został jeszcze wrzucony pod powyższą ścieżkę.</p>`;
- if(r.type==='image') body += `<div class="imgbox"><img src="${r.path}" onerror="this.style.display='none';document.getElementById('imgerr').style.display='block'" /></div><p id="imgerr" class="empty" style="display:none">Zdjęcie nie istnieje jeszcze pod tą ścieżką. Wrzuć plik do repo i odśwież stronę.</p>`;
- if(r.type==='record') body += `<iframe src="${r.path}"></iframe>`;
- viewer.innerHTML=body;}
-document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;renderList();});search.oninput=renderList;renderList();openRecord(records[0]);
+const CSV_PATH='05_T777/rejestr_t777.csv';
+const GH='https://github.com/komendantmb/archiwum_13_sas';
+const RAW='https://raw.githubusercontent.com/komendantmb/archiwum_13_sas/main/';
+let records=[],filter='all';
+const list=document.getElementById('list'),viewer=document.getElementById('viewer'),search=document.getElementById('search'),stats=document.getElementById('stats');
+function splitCSVLine(line){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'){q=!q;continue}if(c===';'&&!q){out.push(cur);cur='';continue}cur+=c}out.push(cur);return out}
+function parseCSV(txt){const lines=txt.replace(/^\uFEFF/,'').trim().split(/\r?\n/);const head=splitCSVLine(lines.shift());return lines.filter(Boolean).map(line=>{const vals=splitCSVLine(line);const o={};head.forEach((h,i)=>o[h]=vals[i]||'');return o})}
+function normalizeType(t){return (t||'').trim().toUpperCase()}
+function recordTitle(r){return r.OPIS_KRÓTKI||r.TYP||r.ID}
+function candidateFile(r){const loc=r.LOKALIZACJA_W_ZRODLE||'';let name='';if(loc.includes('=>')) name=loc.split('=>').pop().trim();if(!name) return null;const lower=name.toLowerCase();if(lower.endsWith('.pdf')) return 'assets/pdf/'+name;if(/\.(jpg|jpeg|png|webp)$/i.test(name)) return 'assets/img/'+name;return 'assets/media/'+name}
+function row(label,value){return `<tr><th>${label}</th><td>${value?String(value).replaceAll('<','&lt;'):'<span class="muted">brak</span>'}</td></tr>`}
+function renderList(){const q=search.value.toLowerCase();let data=records.filter(r=>{const t=normalizeType(r.TYP);const all=Object.values(r).join(' ').toLowerCase();if(filter==='JAN' && (r.CZY_DOTYCZY_BEZPOSREDNIO_JANA||'').toUpperCase()!=='TAK') return false;if(filter!=='all'&&filter!=='JAN'&&t!==filter) return false;return all.includes(q)});stats.textContent=`Pokazuję ${data.length} z ${records.length} rekordów T777`;list.innerHTML='';data.forEach((r,idx)=>{const el=document.createElement('div');el.className='item';el.innerHTML=`<div class="code">${r.ID||'BRAK_ID'} · ${normalizeType(r.TYP)}</div><div class="title">${recordTitle(r)}</div><div class="meta">${r.DATA_ISO||'bez daty'} · ${r.MIEJSCE||'bez miejsca'} · ${r.STATUS_DOWODOWY||'bez statusu'}</div>`;el.onclick=()=>openRecord(r,el);list.appendChild(el)});if(data[0]&&!document.querySelector('.item.active')) openRecord(data[0])}
+function openRecord(r,el){document.querySelectorAll('.item').forEach(x=>x.classList.remove('active'));if(el)el.classList.add('active');const cand=candidateFile(r);const isP=(r.STATUS_DOWODOWY||'').includes('[P]');let html=`<span class="badge">${r.ID}</span><span class="badge">${normalizeType(r.TYP)}</span><span class="badge ${isP?'p':'warn'}">${r.STATUS_DOWODOWY||'BRAK STATUSU'}</span><h2>${recordTitle(r)}</h2><p class="muted">${r.UWAGA_METODOLOGICZNA||'Rekord rejestru T777. Interpretację należy prowadzić zgodnie z separacją [P]/[W]/[H].'}</p><table>${row('Data ISO',r.DATA_ISO)}${row('Miejsce',r.MIEJSCE)}${row('Powiązania',r.POWIĄZANIA)}${row('Lokalizacja w źródle',r.LOKALIZACJA_W_ZRODLE)}${row('Cytat minimalny',r.CYTAT_MINIMALNY)}${row('Dotyczy bezpośrednio Jana',r.CZY_DOTYCZY_BEZPOSREDNIO_JANA)}</table><p><a class="btn" href="${CSV_PATH}" target="_blank">Otwórz rejestr CSV</a><a class="btn" href="${GH}" target="_blank">Repo GitHub</a></p>`;
+if(cand){html+=`<div class="panel"><b>Kandydat pliku źródłowego</b><p class="muted">${cand}</p><a class="btn" href="${cand}" target="_blank">Spróbuj otworzyć lokalnie</a><a class="btn" href="${RAW+cand}" target="_blank">Spróbuj otworzyć RAW</a><div class="missing">Jeżeli link zwraca 404, plik binarny nie został jeszcze wgrany. Rekord istnieje, ale skan/PDF trzeba dopiąć fizycznie pod wskazaną ścieżkę.</div></div>`}else{html+=`<div class="missing">Ten rekord nie ma jeszcze jednoznacznie wpisanej ścieżki do skanu/PDF w kolumnie LOKALIZACJA_W_ZRODLE.</div>`}
+viewer.innerHTML=html}
+async function boot(){try{let res=await fetch(CSV_PATH,{cache:'no-store'});if(!res.ok)res=await fetch(RAW+CSV_PATH,{cache:'no-store'});const txt=await res.text();records=parseCSV(txt);renderList();if(records[0])openRecord(records[0])}catch(e){viewer.innerHTML='<h2>Nie udało się załadować CSV</h2><p class="muted">Uruchom stronę przez Netlify/GitHub Pages/lokalny serwer. Bez serwera przeglądarka może blokować fetch do CSV.</p>';stats.textContent='CSV niezaładowany'}}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;renderList()});search.oninput=renderList;boot();
 </script>
 </body>
 </html>
