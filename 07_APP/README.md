@@ -14,6 +14,7 @@ Starter przeglądarkowego frontu Archiwum 13.
 - [Rejestr pozycji prasowych](../02_I/pozycje_prasowe.csv)
 - [Pakiet roboczy SAS](../06_NOTATKI/pakiet_roboczy_SAS.md)
 - [Front HTML](./ARCHIWUM_13_START.html)
+- [Przełącznik aplikacji](./aplikacje.html) – centrum uruchamiania modułów z filtrowaniem
 
 ## Szybki start (lokalnie)
 1. Uruchom podgląd HTML:
