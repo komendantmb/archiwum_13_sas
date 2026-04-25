@@ -1,8 +1,8 @@
-constfile: 'docs/GW_1978_Wyd.AB_0039.pdf' documents = [
+const documents = [
   {id:'T777', title:'Rejestr T777', category:'Teczka 777', layer:'[P]', status:'aktywny', file:'../05_T777/rejestr_t777.csv', description:'Główny rejestr Teczki 777.'},
   {id:'PRASA-IDX', title:'Indeks prasy', category:'Prasa', layer:'[I]', status:'aktywny', file:'../02_I/pozycje_prasowe.csv', description:'Indeks pozycji prasowych w repo.'},
   {id:'ARTEFAKTY', title:'Artefakty rodu', category:'Artefakty', layer:'[P/I]', status:'aktywny', file:'../06_NOTATKI/ARTEFAKTY_RODU.csv', description:'Rejestr artefaktów rodowych.'},
-  {id:'T777-024', title:'Głos Wielkopolski 17.02.1978', category:'Prasa', layer:'[P]', status:'do uploadu PDF', file:'docs/GW_1978_Wyd.AB_0039.pdf', description:'Dowód prasowy funkcji Jana Baczyńskiego w strukturze wojewódzkiej PZPR.'},
+  {id:'T777-024', title:'Głos Wielkopolski 17.02.1978', category:'Prasa', layer:'[P]', status:'aktywny PDF', file:'docs/GW_1978_Wyd.AB_0039.pdf', description:'Dowód prasowy funkcji Jana Baczyńskiego w strukturze wojewódzkiej PZPR.'},
   {id:'DOC-191-286', title:'Dokumenty Baczyńscy 191-286', category:'Dokumenty', layer:'[P]', status:'do uploadu PDF', file:'docs/Dokumenty Baczyńscy _191-286.pdf', description:'Duży pakiet dokumentów źródłowych.'},
   {id:'DYP-02', title:'Dyplomy cz.2', category:'Dyplomy', layer:'[P]', status:'do uploadu PDF', file:'docs/Dyplomy cz.2.pdf', description:'Pakiet dyplomów i dokumentów honorowych.'},
   {id:'SPLIT-001', title:'Dokumenty Baczyńscy 1-49', category:'Dokumenty', layer:'[P]', status:'do uploadu PDF', file:'docs/split_Dokumenty_Baczyńscy_-2_1-49.pdf', description:'Segment 1 dużego pakietu dokumentów.'},
@@ -22,4 +22,4 @@ let activeCategory='';
 function setCategory(c){activeCategory=c;render();}
 function render(){const q=(document.getElementById('search')?.value||'').toLowerCase();const c=document.getElementById('catalog');c.innerHTML='';const filtered=documents.filter(d=>(!activeCategory||d.category===activeCategory)&&(`${d.id} ${d.title} ${d.category} ${d.layer} ${d.status} ${d.description}`.toLowerCase().includes(q)));document.getElementById('count').textContent=`Widoczne: ${filtered.length} / ${documents.length}`;filtered.forEach(d=>{const el=document.createElement('article');el.className='card';el.innerHTML=`<div class="badge">${d.category} · ${d.layer}</div><h3>${d.title}</h3><p>${d.description}</p><p class="meta">ID: ${d.id}<br>Status: ${d.status}</p><div class="actions"><button onclick="openPdf('${d.id}')">Otwórz w czytelni</button><a href="${d.file}" target="_blank" rel="noopener">Nowa karta</a></div>`;c.appendChild(el);});}
 function openPdf(id){const d=documents.find(x=>x.id===id);if(!d)return;document.getElementById('viewer-title').textContent=d.title;document.getElementById('viewer-meta').textContent=`${d.id} · ${d.category} · ${d.layer} · ${d.status}`;document.getElementById('pdf-frame').src=d.file;document.getElementById('open-new').href=d.file;document.querySelector('.viewer').scrollIntoView({behavior:'smooth'});}
-render();openPdf('T777');
+render();openPdf('T777-024');
