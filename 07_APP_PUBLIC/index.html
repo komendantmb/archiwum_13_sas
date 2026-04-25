@@ -13,21 +13,28 @@
     <h1>ArCH 13 SAS</h1>
     <p>Publiczna czytelnia cyfrowa: dokumenty, zdjęcia, Teczka 777, prasa i warstwa źródłowa [P].</p>
   </div>
+  <div class="header-stats">
+    <div><span id="stat-total">0</span><small>pozycji</small></div>
+    <div><span id="stat-visible">0</span><small>widocznych</small></div>
+    <div><span id="stat-p">0</span><small>warstwa [P]</small></div>
+  </div>
 </header>
 
 <div class="layout">
   <aside>
     <h2>Menu</h2>
-    <button onclick="setCategory('')">Wszystko</button>
-    <button onclick="setCategory('Teczka 777')">Teczka 777</button>
-    <button onclick="setCategory('Dokumenty')">Dokumenty</button>
-    <button onclick="setCategory('Zdjęcia')">Zdjęcia</button>
-    <button onclick="setCategory('Prasa')">Prasa</button>
-    <button onclick="setCategory('Dyplomy')">Dyplomy</button>
-    <button onclick="setCategory('Profile')">Profile</button>
+    <div id="category-list" class="menu-list"></div>
 
     <h2>Szukaj</h2>
     <input id="search" placeholder="np. Baczyński, 1978, dyplom, zdjęcia" oninput="render()">
+
+    <h2>Sortowanie</h2>
+    <select id="sort" onchange="render()">
+      <option value="title-asc">Tytuł (A → Z)</option>
+      <option value="title-desc">Tytuł (Z → A)</option>
+      <option value="status">Status (aktywne najpierw)</option>
+      <option value="category">Kategoria</option>
+    </select>
 
     <h2>Status</h2>
     <p id="count"></p>

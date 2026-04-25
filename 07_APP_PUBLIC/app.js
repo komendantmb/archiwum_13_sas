@@ -18,8 +18,97 @@ const documents = [
   {id:'ZDJ-250', title:'Zdjęcia Ród Baczyński 250-299', category:'Zdjęcia', layer:'[P]', status:'do uploadu PDF', file:'docs/Zdjęcia_Ród_Baczński_SaS_250-299-2.pdf', description:'Pakiet zdjęciowy 5.'},
   {id:'ZDJ-300', title:'Zdjęcia Ród Baczyński 300-349', category:'Zdjęcia', layer:'[P]', status:'do uploadu PDF', file:'docs/Zdjęcia_Ród_Baczński_SaS_300-349-2.pdf', description:'Pakiet zdjęciowy 6.'}
 ];
-let activeCategory='';
-function setCategory(c){activeCategory=c;render();}
-function render(){const q=(document.getElementById('search')?.value||'').toLowerCase();const c=document.getElementById('catalog');c.innerHTML='';const filtered=documents.filter(d=>(!activeCategory||d.category===activeCategory)&&(`${d.id} ${d.title} ${d.category} ${d.layer} ${d.status} ${d.description}`.toLowerCase().includes(q)));document.getElementById('count').textContent=`Widoczne: ${filtered.length} / ${documents.length}`;filtered.forEach(d=>{const el=document.createElement('article');el.className='card';el.innerHTML=`<div class="badge">${d.category} · ${d.layer}</div><h3>${d.title}</h3><p>${d.description}</p><p class="meta">ID: ${d.id}<br>Status: ${d.status}</p><div class="actions"><button onclick="openPdf('${d.id}')">Otwórz w czytelni</button><a href="${d.file}" target="_blank" rel="noopener">Nowa karta</a></div>`;c.appendChild(el);});}
-function openPdf(id){const d=documents.find(x=>x.id===id);if(!d)return;document.getElementById('viewer-title').textContent=d.title;document.getElementById('viewer-meta').textContent=`${d.id} · ${d.category} · ${d.layer} · ${d.status}`;document.getElementById('pdf-frame').src=d.file;document.getElementById('open-new').href=d.file;document.querySelector('.viewer').scrollIntoView({behavior:'smooth'});}
-render();openPdf('T777');
+
+let activeCategory = '';
+
+function getCategories() {
+  return [...new Set(documents.map((d) => d.category))].sort((a, b) => a.localeCompare(b, 'pl'));
+}
+
+function initMenu() {
+  const menu = document.getElementById('category-list');
+  const categories = ['Wszystko', ...getCategories()];
+
+  menu.innerHTML = categories.map((category) => {
+    const isAll = category === 'Wszystko';
+    const value = isAll ? '' : category;
+    const cls = value === activeCategory ? 'active' : '';
+    return `<button class="${cls}" onclick="setCategory('${value}')">${category}</button>`;
+  }).join('');
+}
+
+function setCategory(category) {
+  activeCategory = category;
+  initMenu();
+  render();
+}
+
+function getSortedDocuments(items) {
+  const sortMode = document.getElementById('sort')?.value || 'title-asc';
+
+  return [...items].sort((a, b) => {
+    if (sortMode === 'title-desc') return b.title.localeCompare(a.title, 'pl');
+    if (sortMode === 'status') return a.status.localeCompare(b.status, 'pl');
+    if (sortMode === 'category') {
+      const cat = a.category.localeCompare(b.category, 'pl');
+      return cat !== 0 ? cat : a.title.localeCompare(b.title, 'pl');
+    }
+    return a.title.localeCompare(b.title, 'pl');
+  });
+}
+
+function renderStats(visibleCount) {
+  const layerP = documents.filter((d) => d.layer.includes('[P]')).length;
+  document.getElementById('stat-total').textContent = documents.length;
+  document.getElementById('stat-visible').textContent = visibleCount;
+  document.getElementById('stat-p').textContent = layerP;
+}
+
+function render() {
+  const query = (document.getElementById('search')?.value || '').toLowerCase().trim();
+  const catalog = document.getElementById('catalog');
+
+  const filtered = documents.filter((d) => {
+    const inCategory = !activeCategory || d.category === activeCategory;
+    const haystack = `${d.id} ${d.title} ${d.category} ${d.layer} ${d.status} ${d.description}`.toLowerCase();
+    return inCategory && haystack.includes(query);
+  });
+
+  const sorted = getSortedDocuments(filtered);
+
+  document.getElementById('count').textContent = `Widoczne: ${sorted.length} / ${documents.length}`;
+  renderStats(sorted.length);
+
+  if (!sorted.length) {
+    catalog.innerHTML = '<article class="card empty"><h3>Brak wyników</h3><p>Zmień kategorię, frazę wyszukiwania albo sortowanie.</p></article>';
+    return;
+  }
+
+  catalog.innerHTML = sorted.map((d) => `
+    <article class="card">
+      <div class="badge">${d.category} · ${d.layer}</div>
+      <h3>${d.title}</h3>
+      <p>${d.description}</p>
+      <p class="meta">ID: ${d.id}<br>Status: ${d.status}</p>
+      <div class="actions">
+        <button onclick="openPdf('${d.id}')">Otwórz w czytelni</button>
+        <a href="${d.file}" target="_blank" rel="noopener">Nowa karta</a>
+      </div>
+    </article>
+  `).join('');
+}
+
+function openPdf(id) {
+  const selected = documents.find((doc) => doc.id === id);
+  if (!selected) return;
+
+  document.getElementById('viewer-title').textContent = selected.title;
+  document.getElementById('viewer-meta').textContent = `${selected.id} · ${selected.category} · ${selected.layer} · ${selected.status}`;
+  document.getElementById('pdf-frame').src = selected.file;
+  document.getElementById('open-new').href = selected.file;
+  document.querySelector('.viewer').scrollIntoView({ behavior: 'smooth' });
+}
+
+initMenu();
+render();
+openPdf('T777');
