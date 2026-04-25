@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ArCH 13 SAS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <p class="seal">MB13 · ARCHIWUM 13 SAS</p>
+    <h1>ArCH 13 SAS</h1>
+    <p>Publiczna czytelnia cyfrowa: dokumenty, zdjęcia, Teczka 777, prasa i warstwa źródłowa [P].</p>
+  </div>
+</header>
+
+<div class="layout">
+  <aside>
+    <h2>Menu</h2>
+    <button onclick="setCategory('')">Wszystko</button>
+    <button onclick="setCategory('Teczka 777')">Teczka 777</button>
+    <button onclick="setCategory('Dokumenty')">Dokumenty</button>
+    <button onclick="setCategory('Zdjęcia')">Zdjęcia</button>
+    <button onclick="setCategory('Prasa')">Prasa</button>
+    <button onclick="setCategory('Dyplomy')">Dyplomy</button>
+    <button onclick="setCategory('Profile')">Profile</button>
+
+    <h2>Szukaj</h2>
+    <input id="search" placeholder="np. Baczyński, 1978, dyplom, zdjęcia" oninput="render()">
+
+    <h2>Status</h2>
+    <p id="count"></p>
+    <p class="small">Warstwa [P] oznacza materiał pierwotny. Opisy są robocze i nie zastępują sygnatur, transkrypcji ani karty archiwalnej.</p>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <h2>Wejście główne</h2>
+      <p>Wybierz dokument z katalogu. PDF otworzy się w czytelni albo w nowej karcie. Gdy PDF nie jest jeszcze w repo, karta pokaże status do uploadu.</p>
+      <div class="quick">
+        <a href="../README.md">README repo</a>
+        <a href="../05_T777/rejestr_t777.csv">Rejestr T777</a>
+        <a href="../02_I/pozycje_prasowe.csv">Indeks prasy</a>
+        <a href="../06_NOTATKI/ARTEFAKTY_RODU.csv">Artefakty rodu</a>
+      </div>
+    </section>
+
+    <section id="catalog" class="grid"></section>
+
+    <section class="viewer">
+      <div class="viewer-header">
+        <div>
+          <h2 id="viewer-title">Czytelnia PDF</h2>
+          <p id="viewer-meta"></p>
+        </div>
+        <a id="open-new" href="#" target="_blank" rel="noopener">Otwórz w nowej karcie</a>
+      </div>
+      <iframe id="pdf-frame" title="Czytelnia PDF"></iframe>
+    </section>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
