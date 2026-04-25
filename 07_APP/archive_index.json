@@ -1,0 +1,92 @@
+{
+  "schema": "ARCH13_SAS_STATIC_ARCHIVE_INDEX_v1",
+  "updated": "2026-04-25",
+  "storage_model": {
+    "pdf_base": "./public/archive/pdf/",
+    "image_base": "./public/archive/images/",
+    "thumb_base": "./public/archive/thumbs/",
+    "rule": "Pole file działa dopiero wtedy, gdy wskazany plik jest fizycznie w repo lub w publicznym storage. Pole source_manifest zachowuje nazwę i hash z manifestu."
+  },
+  "items": [
+    {
+      "id": "T777_024",
+      "layer": "P",
+      "room": "p",
+      "type": "PDF",
+      "title": "Głos Wielkopolski nr 39, 17 II 1978",
+      "subtitle": "Jan Baczyński wymieniony jako przewodniczący Wojewódzkiej Komisji Rewizyjnej PZPR",
+      "date": "1978-02-17",
+      "place": "Piła",
+      "status": "missing_binary",
+      "file": "./public/archive/pdf/GW_1978_Wyd.AB_0039.pdf",
+      "thumb": "./public/archive/thumbs/GW_1978_Wyd.AB_0039.jpg",
+      "source_manifest": "GW_1978_Wyd.AB_0039.pdf",
+      "sha256": "1ff41de0eaa7a608aa9ae563f5c938188ce54ef064a37921517418cd0f548927",
+      "note": "Mały PDF 3.15 MB. Najpierw wgrać jako plik testowy, bo powinien działać bez Git LFS."
+    },
+    {
+      "id": "T777_PHOTO_001",
+      "layer": "P",
+      "room": "photo",
+      "type": "PDF",
+      "title": "Zdjęcia rodu Baczyńskich, pakiet 1–49",
+      "subtitle": "Ikonografia rodzinna i wojskowa",
+      "date": "XX w.",
+      "place": "01_P",
+      "status": "missing_binary",
+      "file": "./public/archive/pdf/Zdjecia_asFamily_Baczynski_1-49.pdf",
+      "thumb": "./public/archive/thumbs/Zdjecia_asFamily_Baczynski_1-49.jpg",
+      "source_manifest": "Zdjecia$asFamily)Baczynski_1-49.pdf",
+      "sha256": "d81f4a01739bd6fd07dcd8f43241248dc4f609e339d6e4bc875037a72ed9ab92",
+      "note": "Warto zmienić nazwę techniczną na prostą ASCII, bez $, nawiasów i polskich znaków."
+    },
+    {
+      "id": "T777_DOC_191_286",
+      "layer": "P",
+      "room": "p",
+      "type": "PDF",
+      "title": "Dokumenty Baczyńscy, pakiet 191–286",
+      "subtitle": "Duży pakiet dokumentów źródłowych",
+      "date": "XX w.",
+      "place": "01_P",
+      "status": "requires_lfs_or_split",
+      "file": "./public/archive/pdf/Dokumenty_Baczynscy_191-286.pdf",
+      "thumb": "./public/archive/thumbs/Dokumenty_Baczynscy_191-286.jpg",
+      "source_manifest": "Dokumenty Baczyńscy _191-286.pdf",
+      "sha256": "f96dd77da59bb259fbc8813a3e85da5128d0582916527fa35462c977f1ac2b1b",
+      "note": "137.13 MB. Nie wrzucać zwykłym web uploadem. Użyć Git LFS albo rozbić na mniejsze paczki."
+    },
+    {
+      "id": "T777_DYPLOMY_002",
+      "layer": "P",
+      "room": "p",
+      "type": "PDF",
+      "title": "Dyplomy cz. 2",
+      "subtitle": "Pakiet dyplomów i dokumentów osobistych",
+      "date": "XX w.",
+      "place": "01_P",
+      "status": "large_file_caution",
+      "file": "./public/archive/pdf/Dyplomy_cz_2.pdf",
+      "thumb": "./public/archive/thumbs/Dyplomy_cz_2.jpg",
+      "source_manifest": "Dyplomy cz.2.pdf",
+      "sha256": "1f442b42af3b8056f70955c9fba40850ca70e5d9a191c200edc474ed4ee5ac2a",
+      "note": "99.55 MB. Graniczny rozmiar dla zwykłego GitHub. Zalecany LFS lub split."
+    },
+    {
+      "id": "T777_KWI19_035",
+      "layer": "P",
+      "room": "p",
+      "type": "PDF",
+      "title": "kwi 19 Dokument 35",
+      "subtitle": "Duży pakiet skanów",
+      "date": "XX w.",
+      "place": "01_P",
+      "status": "requires_lfs_or_split",
+      "file": "./public/archive/pdf/kwi_19_Dokument_35.pdf",
+      "thumb": "./public/archive/thumbs/kwi_19_Dokument_35.jpg",
+      "source_manifest": "kwi 19 Dokument 35.pdf",
+      "sha256": "21ccc69eef5e8a4471e5ab71cacbcda8e5cf76b7884dfde953d53ab70c2aa78f",
+      "note": "161.86 MB. Konieczny Git LFS, storage zewnętrzny albo podział."
+    }
+  ]
+}
