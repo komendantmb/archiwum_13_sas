@@ -1,4 +1,4 @@
-const documents = [
+constfile: 'docs/GW_1978_Wyd.AB_0039.pdf' documents = [
   {id:'T777', title:'Rejestr T777', category:'Teczka 777', layer:'[P]', status:'aktywny', file:'../05_T777/rejestr_t777.csv', description:'Główny rejestr Teczki 777.'},
   {id:'PRASA-IDX', title:'Indeks prasy', category:'Prasa', layer:'[I]', status:'aktywny', file:'../02_I/pozycje_prasowe.csv', description:'Indeks pozycji prasowych w repo.'},
   {id:'ARTEFAKTY', title:'Artefakty rodu', category:'Artefakty', layer:'[P/I]', status:'aktywny', file:'../06_NOTATKI/ARTEFAKTY_RODU.csv', description:'Rejestr artefaktów rodowych.'},
