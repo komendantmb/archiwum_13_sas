@@ -19,15 +19,13 @@ Starter przeglądarkowego frontu Archiwum 13.
 Wykonaj **wszystkie zadania** z listy poniżej po otwarciu `07_APP/ARCHIWUM_13_START.html`.
 
 ### Zadania testowe (checklista)
-1. Wejdź do sekcji „Zbiory”.
-2. Wybierz i kliknij jeden rekord z listy.
-3. Potwierdź, że pojawia się panel szczegółów rekordu.
-4. Kliknij link do pliku `.csv` i sprawdź, czy otwiera się właściwy zasób repo.
-5. Wróć do widoku i przełącz filtry warstw `[P] [I] [R] [H]`.
-6. Potwierdź, że lista rekordów reaguje na przełączanie filtrów.
-7. Zanotuj wynik testu jako:
-   - `OK` (wszystkie zadania zaliczone), albo
-   - `DO POPRAWY` (minimum jedno zadanie niezaliczone).
+- [ ] Wejdź do sekcji „Zbiory”.
+- [ ] Wybierz i kliknij jeden rekord z listy.
+- [ ] Potwierdź, że pojawia się panel szczegółów rekordu.
+- [ ] Kliknij link do pliku `.csv` i sprawdź, czy otwiera się właściwy zasób repo.
+- [ ] Wróć do widoku i przełącz filtry warstw `[P] [I] [R] [H]`.
+- [ ] Potwierdź, że lista rekordów reaguje na przełączanie filtrów.
+- [ ] Zanotuj wynik testu jako: `OK` (wszystkie zadania zaliczone) albo `DO POPRAWY` (minimum jedno zadanie niezaliczone).
 
 ## Co już działa
 - strona główna archiwum,
