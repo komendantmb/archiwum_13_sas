@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archiwum 13 – Centrum aplikacji</title>
+  <meta name="description" content="Centrum uruchamiania aplikacji HTML dla modułu 07_APP Archiwum 13.">
+  <style>
+    :root {
+      --bg: #0d0b08;
+      --paper: #f3ead8;
+      --ink: #241b12;
+      --muted: #bca98a;
+      --gold: #b28a3d;
+      --line: #3b2d1f;
+      --panel: #17120c;
+      --ok: #0f6f3f;
+      --warn: #8c5f12;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #2b2015 0, #0d0b08 45%, #060504 100%);
+      color: var(--paper);
+      font: 16px/1.5 Georgia, "Times New Roman", serif;
+    }
+    a { color: #f0c56e; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 24px 16px 32px; }
+    .head {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(178, 138, 61, .16), rgba(23, 18, 12, .96));
+      padding: 22px;
+    }
+    .head h1 { margin: 0 0 6px; font-size: 38px; line-height: 1.1; }
+    .head p { margin: 0; color: #d8c9ae; max-width: 900px; }
+    .toolbar {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr 240px;
+      gap: 10px;
+    }
+    .toolbar input,
+    .toolbar select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #21180f;
+      color: var(--paper);
+      padding: 10px 12px;
+      font: inherit;
+    }
+    .summary {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(23, 18, 12, .95);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card h2 { margin: 0; font-size: 21px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 13px;
+      color: #d8c9ae;
+    }
+    .status-ok { border-color: #1f7f4d; color: #9fdbb5; background: rgba(15, 111, 63, .20); }
+    .status-warn { border-color: #9a6a15; color: #ffd79a; background: rgba(140, 95, 18, .20); }
+    .actions { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn {
+      text-decoration: none;
+      border: 1px solid var(--gold);
+      border-radius: 10px;
+      padding: 7px 10px;
+      background: #2a1e12;
+      color: #f3d18a;
+    }
+    .btn:hover { filter: brightness(1.08); }
+    .empty {
+      border: 1px dashed var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      color: var(--muted);
+    }
+    .footer { margin-top: 16px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 760px) {
+      .head h1 { font-size: 30px; }
+      .toolbar { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <h1>Archiwum 13 — Centrum aplikacji</h1>
+      <p>Jedno miejsce do uruchamiania modułów HTML z katalogu <code>07_APP</code>. Widok umożliwia filtrowanie po typie oraz szybkie wyszukiwanie po nazwie/opisie.</p>
+      <div class="toolbar">
+        <input id="query" type="search" placeholder="Szukaj: galeria, czytelnia, start..." aria-label="Szukaj aplikacji">
+        <select id="type" aria-label="Filtr typu aplikacji">
+          <option value="all">Wszystkie typy</option>
+          <option value="start">Start</option>
+          <option value="czytelnia">Czytelnia</option>
+          <option value="galeria">Galeria</option>
+          <option value="meta">Meta/nawigacja</option>
+        </select>
+      </div>
+      <div class="summary" id="summary"></div>
+    </header>
+
+    <main class="grid" id="apps"></main>
+
+    <p class="footer">Szybki start: <code>python3 -m http.server</code> i wejście na <code>/07_APP/aplikacje.html</code>.</p>
+  </div>
+
+  <script>
+    const apps = [
+      {
+        name: "Archiwum 13 — Start",
+        file: "ARCHIWUM_13_START.html",
+        type: "start",
+        status: "ok",
+        desc: "Główny interfejs muzeum cyfrowego z gablotami i filtrowaniem warstw.",
+      },
+      {
+        name: "Czytelnia PDF — Start",
+        file: "czytelnia_pdf_start.html",
+        type: "czytelnia",
+        status: "ok",
+        desc: "Punkt wejścia do czytelni PDF i indeksów dokumentów.",
+      },
+      {
+        name: "Galeria IPN",
+        file: "galeria_ipn.html",
+        type: "galeria",
+        status: "ok",
+        desc: "Galeria materiałów IPN do przeglądu roboczego.",
+      },
+      {
+        name: "Galeria Kustosza",
+        file: "galeria_kustosza.html",
+        type: "galeria",
+        status: "ok",
+        desc: "Galeria robocza obiektów i materiałów ikonograficznych.",
+      },
+      {
+        name: "README 07_APP",
+        file: "README.md",
+        type: "meta",
+        status: "ok",
+        desc: "Opis modułu, cele i szybki start pracy z frontem.",
+      },
+      {
+        name: "Start Here",
+        file: "start_here.md",
+        type: "meta",
+        status: "ok",
+        desc: "Minimalna mapa startowa projektu Archiwum 13.",
+      },
+    ];
+
+    const list = document.getElementById("apps");
+    const queryEl = document.getElementById("query");
+    const typeEl = document.getElementById("type");
+    const summaryEl = document.getElementById("summary");
+
+    function filtered() {
+      const q = queryEl.value.trim().toLowerCase();
+      const t = typeEl.value;
+      return apps.filter((app) => {
+        const typeMatch = t === "all" || app.type === t;
+        const text = [app.name, app.file, app.desc, app.type].join(" ").toLowerCase();
+        const queryMatch = !q || text.includes(q);
+        return typeMatch && queryMatch;
+      });
+    }
+
+    function render() {
+      const data = filtered();
+      summaryEl.textContent = `Widoczne aplikacje: ${data.length} z ${apps.length}.`;
+
+      if (!data.length) {
+        list.innerHTML = '<section class="empty">Brak wyników. Zmień filtr lub frazę wyszukiwania.</section>';
+        return;
+      }
+
+      list.innerHTML = data.map((app) => {
+        const statusClass = app.status === "ok" ? "status-ok" : "status-warn";
+        const statusLabel = app.status === "ok" ? "gotowe" : "wymaga uwagi";
+        return `
+          <article class="card">
+            <h2>${app.name}</h2>
+            <div class="meta">Plik: <code>${app.file}</code></div>
+            <p>${app.desc}</p>
+            <div class="tags">
+              <span class="tag">${app.type}</span>
+              <span class="tag ${statusClass}">${statusLabel}</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="${app.file}">Otwórz</a>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    queryEl.addEventListener("input", render);
+    typeEl.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>
