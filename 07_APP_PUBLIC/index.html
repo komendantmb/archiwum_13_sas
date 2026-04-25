@@ -3,64 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ArCH 13 SAS</title>
-  <link rel="stylesheet" href="style.css">
+  <title>ARCHIWUM 13 SAS – publiczna czytelnia</title>
+  <style>
+    :root{--bg:#0d0b08;--panel:#17120c;--paper:#f3ead8;--muted:#d8c9ae;--gold:#b28a3d;--line:#3b2d1f;--red:#7b1f1f}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#2b2015 0,#0d0b08 48%,#060504 100%);color:var(--paper);font:16px/1.55 Georgia,'Times New Roman',serif}a{color:#f0c56e;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:28px}.hero{border:1px solid var(--line);border-radius:22px;padding:30px;background:linear-gradient(145deg,rgba(178,138,61,.18),rgba(23,18,12,.96));box-shadow:0 20px 80px rgba(0,0,0,.35)}.seal{display:inline-block;border:1px solid var(--gold);border-radius:999px;padding:8px 13px;color:#f4d28a;margin-bottom:14px}.hero h1{font-size:46px;line-height:1.06;margin:0 0 10px}.hero p{max-width:880px;color:var(--muted);margin:0}.notice{margin-top:16px;border-left:3px solid var(--red);padding-left:13px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-radius:18px;background:rgba(23,18,12,.94);padding:18px}.card h2{margin:0 0 8px;color:#f4d28a;font-size:22px}.card p{color:var(--muted);margin:0 0 14px}.btn{display:inline-block;border:1px solid var(--gold);border-radius:12px;background:#2a1e12;color:#f3d18a;padding:10px 12px;margin:4px 6px 4px 0}.section{margin-top:18px;border:1px solid var(--line);border-radius:18px;background:rgba(23,18,12,.94);padding:18px}.section h2{color:#f4d28a;margin:0 0 8px}.path{font-family:ui-monospace,Consolas,monospace;color:#d8c9ae;background:#21180f;border:1px solid var(--line);border-radius:10px;padding:10px;overflow:auto}.footer{margin-top:18px;color:#bca98a;font-size:14px}@media(max-width:900px){.grid{grid-template-columns:1fr}.hero h1{font-size:34px}}
+  </style>
 </head>
 <body>
-<header>
-  <div>
-    <p class="seal">MB13 · ARCHIWUM 13 SAS</p>
-    <h1>ArCH 13 SAS</h1>
-    <p>Publiczna czytelnia cyfrowa: dokumenty, zdjęcia, Teczka 777, prasa i warstwa źródłowa [P].</p>
+<div class="wrap">
+  <section class="hero">
+    <div class="seal">MB13 · ARCHIWUM 13 SAS</div>
+    <h1>ARCHIWUM 13 SAS<br>publiczna czytelnia rodu Baczyńskich</h1>
+    <p>To jest wejście dla ludzi: bez technicznego chaosu, bez mieszania faktów z hipotezami. Archiwum porządkuje dokumenty, zdjęcia, prasę, artefakty i rdzeń Teczki 777.</p>
+    <div class="notice">Zasada główna: dokument jest dokumentem, relacja jest relacją, hipoteza jest hipotezą. Teczka 777 opiera się wyłącznie na materiale [P].</div>
+  </section>
+
+  <div class="grid">
+    <article class="card"><h2>Zacznij tutaj</h2><p>Najprostszy przewodnik po archiwum, napisany dla osoby, która pierwszy raz widzi projekt.</p><a class="btn" href="../DLA_LUDZI.md">Otwórz DLA_LUDZI.md</a><a class="btn" href="../README.md">README</a></article>
+    <article class="card"><h2>Teczka 777</h2><p>Rdzeń dowodowy. Rejestr faktów i nośników, które wymagają przypięcia do materiału [P].</p><a class="btn" href="../05_T777/rejestr_t777.csv">Rejestr T777</a><a class="btn" href="../05_T777/podpiecia_status_001_010_i_024_2026-04-25.csv">Status podpięć</a></article>
+    <article class="card"><h2>Prasa i artefakty</h2><p>Indeks prasowy, artefakty rodu, srebro, dyplomy, obiekty i ślady materialne.</p><a class="btn" href="../02_I/pozycje_prasowe.csv">Prasa</a><a class="btn" href="../06_NOTATKI/ARTEFAKTY_RODU.csv">Artefakty</a></article>
+    <article class="card"><h2>Manifest plików</h2><p>Spis zasobu i kontrola integralności. To fundament archiwum jako systemu.</p><a class="btn" href="../02_I/archiwum_13_manifest_wszystkich_plikow_2026-04-24.csv">Manifest wszystkich plików</a></article>
+    <article class="card"><h2>Czytelnia PDF</h2><p>Indeks pokazuje, co jest podpięte lokalnie i co wymaga hostingu albo Git LFS.</p><a class="btn" href="CZYTELNIA_PDF_INDEX.md">Indeks PDF</a><a class="btn" href="DO_UPLOADU_PDF_2026-04-25.md">PDF do uploadu</a></article>
+    <article class="card"><h2>Generator lokalny</h2><p>Narzędzie do zbudowania lokalnej paczki: HTML + folder PDF + manifest + ZIP.</p><a class="btn" href="generator_czytelni_pdf_start_2026-04-25.py">Generator PDF START</a></article>
   </div>
-</header>
 
-<div class="layout">
-  <aside>
-    <h2>Menu</h2>
-    <button onclick="setCategory('')">Wszystko</button>
-    <button onclick="setCategory('Teczka 777')">Teczka 777</button>
-    <button onclick="setCategory('Dokumenty')">Dokumenty</button>
-    <button onclick="setCategory('Zdjęcia')">Zdjęcia</button>
-    <button onclick="setCategory('Prasa')">Prasa</button>
-    <button onclick="setCategory('Dyplomy')">Dyplomy</button>
-    <button onclick="setCategory('Profile')">Profile</button>
-
-    <h2>Szukaj</h2>
-    <input id="search" placeholder="np. Baczyński, 1978, dyplom, zdjęcia" oninput="render()">
-
-    <h2>Status</h2>
-    <p id="count"></p>
-    <p class="small">Warstwa [P] oznacza materiał pierwotny. Opisy są robocze i nie zastępują sygnatur, transkrypcji ani karty archiwalnej.</p>
-  </aside>
-
-  <main>
-    <section class="hero">
-      <h2>Wejście główne</h2>
-      <p>Wybierz dokument z katalogu. PDF otworzy się w czytelni albo w nowej karcie. Gdy PDF nie jest jeszcze w repo, karta pokaże status do uploadu.</p>
-      <div class="quick">
-        <a href="../README.md">README repo</a>
-        <a href="../05_T777/rejestr_t777.csv">Rejestr T777</a>
-        <a href="../02_I/pozycje_prasowe.csv">Indeks prasy</a>
-        <a href="../06_NOTATKI/ARTEFAKTY_RODU.csv">Artefakty rodu</a>
-      </div>
-    </section>
-
-    <section id="catalog" class="grid"></section>
-
-    <section class="viewer">
-      <div class="viewer-header">
-        <div>
-          <h2 id="viewer-title">Czytelnia PDF</h2>
-          <p id="viewer-meta"></p>
-        </div>
-        <a id="open-new" href="#" target="_blank" rel="noopener">Otwórz w nowej karcie</a>
-      </div>
-      <iframe id="pdf-frame" title="Czytelnia PDF"></iframe>
-    </section>
-  </main>
+  <section class="section"><h2>Co jest pewne na dziś</h2><p>Repozytorium jest publiczne. Działają rejestry, manifesty, przewodnik dla ludzi i strona startowa. Część ciężkich PDF-ów nadal wymaga hostingu, dlatego publiczna strona nie udaje, że każdy skan jest już klikany online.</p></section>
+  <section class="section"><h2>Link publiczny</h2><p>Po włączeniu GitHub Pages dla folderu <strong>/07_APP_PUBLIC</strong> strona będzie dostępna jako:</p><div class="path">https://komendantmb.github.io/archiwum_13_sas/</div><p>Do czasu pełnego włączenia Pages działa bezpośrednie wejście do repo:</p><div class="path">https://github.com/komendantmb/archiwum_13_sas</div></section>
+  <div class="footer">ARCHIWUM 13 SAS · publiczna wersja startowa · bez nadpisywania źródeł narracją.</div>
 </div>
-
-<script src="app.js"></script>
 </body>
 </html>
