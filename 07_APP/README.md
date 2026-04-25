@@ -15,6 +15,20 @@ Starter przeglądarkowego frontu Archiwum 13.
 - [Pakiet roboczy SAS](../06_NOTATKI/pakiet_roboczy_SAS.md)
 - [Front HTML](./ARCHIWUM_13_START.html)
 
+## Test
+Wykonaj **wszystkie zadania** z listy poniżej po otwarciu `07_APP/ARCHIWUM_13_START.html`.
+
+### Zadania testowe (checklista)
+1. Wejdź do sekcji „Zbiory”.
+2. Wybierz i kliknij jeden rekord z listy.
+3. Potwierdź, że pojawia się panel szczegółów rekordu.
+4. Kliknij link do pliku `.csv` i sprawdź, czy otwiera się właściwy zasób repo.
+5. Wróć do widoku i przełącz filtry warstw `[P] [I] [R] [H]`.
+6. Potwierdź, że lista rekordów reaguje na przełączanie filtrów.
+7. Zanotuj wynik testu jako:
+   - `OK` (wszystkie zadania zaliczone), albo
+   - `DO POPRAWY` (minimum jedno zadanie niezaliczone).
+
 ## Co już działa
 - strona główna archiwum,
 - sekcje: zbiory, obiekty, osoby, miejsca, oś czasu,
@@ -29,6 +43,7 @@ Starter przeglądarkowego frontu Archiwum 13.
 4. Otwórz `06_NOTATKI/ARTEFAKTY_RODU.csv`.
 5. Otwórz `02_I/pozycje_prasowe.csv`.
 6. Czytaj `06_NOTATKI/pakiet_roboczy_SAS.md` jako notatkę operacyjną.
+7. Na końcu wykonaj **wszystkie zadania** z sekcji `Test` i zapisz wynik.
 
 ## Stan
 To jest działający front roboczy i punkt wejścia do archiwum. Teczka 777 ma aktywny rejestr, artefakty są odseparowane od rdzenia, a pozycje prasowe są wydzielone do warstwy `02_I`.
