@@ -1,0 +1,11 @@
+ID_T777;ID_PDF;NAZWA_PLIKU;KATALOG_ZRODLOWY;KATALOG_PUBLICZNY;STATUS_WPIECIA;KOMENTARZ
+T777-P001;P001;P001_akt_zgonu_jan_stanislaw_baczynski_1982.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu aktu zgonu.
+T777-P002;P002;P002_fiszka_ipn_jan_stanislaw_baczynski.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu fiszki IPN.
+T777-P003;P003;P003_rejestracja_kwiatkowski_1948.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu rejestracji Kwiatkowski.
+T777-P004;P004;P004_protokol_brakowania_60_86.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu protokołu brakowania.
+T777-P005;P005;P005_chodziez_zaklady_porcelany_dokument.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu ChZPiP.
+T777-P006;P006;P006_relaks_sobieszewo_dokument.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu Relaks Sobieszewo.
+T777-P007;P007;P007_michal_baczynski_indeks_represjonowanych.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Zweryfikować status P/I przed publikacją.
+T777-P008;P008;P008_testimonium_baptismi_michal_baczynski.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu chrztu Michała.
+T777-P009;P009;P009_pochvalna_gramota_1941.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu Gramoty.
+T777-P010;P010;P010_protokol_obysku_buczacz_1941.pdf;01_P/pdf/;assets/pdf/;DO_WGRANIA;Po wgraniu podpiąć do rekordu protokołu obysku.
