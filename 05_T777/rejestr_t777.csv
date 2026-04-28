@@ -1,14 +1,14 @@
 ID;DATA_ISO;TYP;OPIS_KRÓTKI;MIEJSCE;STATUS_DOWODOWY;POWIĄZANIA;LOKALIZACJA_W_ZRODLE;CYTAT_MINIMALNY;CZY_DOTYCZY_BEZPOSREDNIO_JANA;UWAGA_METODOLOGICZNA
-T777_001;19451004;FOTO;Fotografia grupowa (5 osób w mundurach);Włocławek;[P];T777_002, T777_004;PDF_010 => split_Dokumenty_Baczyńscy_-2_1-49.pdf;;;
-T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;[P];T777_001, T777_005;PDF_010 => split_Dokumenty_Baczyńscy_-2_1-49.pdf;;;
-T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005, T777_019;PDF_002 => Dyplomy cz.2.pdf;;;
-T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001;PDF_016 => Zdjecia$asFamily)Baczynski_1-49.pdf;;;
-T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003;PDF_001 => Dokumenty Baczyńscy _191-286.pdf;;;
-T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008;PDF_001 => Dokumenty Baczyńscy _191-286.pdf;Jan St. Baczyński;TAK;Odpis urzędowy, nośnik pośmiertny.
-T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006;PDF_005 => kwi 19 Dokument 35.pdf;;;
-T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];T777_009, T777_010;PDF_005 => kwi 19 Dokument 35.pdf;;;
-T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008, T777_010;PDF_005 => kwi 19 Dokument 35.pdf;;;
-T777_010;19761228;WNIOSEK;Ponowny wniosek o limit km dla dyrektora;Chodzież;[P];T777_008, T777_009;PDF_005 => kwi 19 Dokument 35.pdf;;;
+T777_001;19451004;FOTO;Fotografia grupowa (5 osób w mundurach);Włocławek;[P];T777_002, T777_004;assets/pdf/T777_001_002.pdf;;;
+T777_002;19450928;DOK;Rozkaz wojskowy dot. chor. Jana Baczyńskiego;Włocławek;[P];T777_001, T777_005;assets/pdf/T777_001_002.pdf;;;
+T777_003;19460509;DYPLOM;Dyplom MON - Medal Zwycięstwa i Wolności nr 024480;Warszawa;[P];T777_002, T777_005, T777_019;assets/pdf/T777_003_dyplom_MON_medal_zwyciestwa_i_wolnosci_024480.pdf;;;
+T777_004;19451004;REWERS;Rewers foto z datą 4.10.1945 i adnotacją o Włocławku;Włocławek;[P];T777_001;assets/pdf/Zdjecia$asFamily)Baczynski_1-49.pdf;;;
+T777_005;19450000;TECZKA;Materiały WBH/CAW - akta wojskowe J. Baczyńskiego;Warszawa;[P];T777_002, T777_003;assets/pdf/Dokumenty Baczyńscy _191-286.pdf;;;
+T777_006;19820512;AKT_ZGONU;Odpis aktu zgonu Jana St. Baczyńskiego (USC Piła);Piła;[P];L007, L008;assets/pdf/Dokumenty Baczyńscy _191-286.pdf;Jan St. Baczyński;TAK;Odpis urzędowy, nośnik pośmiertny.
+T777_007;19801203;ZARZUTY;Pismo NSZZ Solidarność z 17 zarzutami (do NIK/KCPZPR);Chodzież;[P];K001-K006;assets/pdf/kwi 19 Dokument 35.pdf;;;
+T777_008;19710320;NOTATKA;Notatka dot. delegacji angielskiej i Fiata PA 0454;Chodzież;[P];T777_009, T777_010;assets/pdf/kwi 19 Dokument 35.pdf;;;
+T777_009;19750113;WNIOSEK;Wniosek o limit 1000 km na samochód prywatny;Chodzież;[P];T777_008, T777_010;assets/pdf/kwi 19 Dokument 35.pdf;;;
+T777_010;19761228;WNIOSEK;Ponowny wniosek o limit km dla dyrektora;Chodzież;[P];T777_008, T777_009;assets/pdf/kwi 19 Dokument 35.pdf;;;
 T777_011;00000000;ZAPROSZENIE;Zaproszenie WOSS im. gen. A. Waszkiewicza dla Jana Baczyńskiego, dyrektora Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_012, T777_013;;;;
 T777_012;00000000;WIZYTOWKA;Wizytówka służbowa: Dyrektor Zakładów Porcelany i Porcelitu Chodzież;Chodzież;[P];T777_011, T777_013;;;;
 T777_013;00000000;WIZYTOWKA;Wizytówka zakładowa z adresem ul. Łąkowa 2 i numerem telefonu 147;Chodzież;[P];T777_011, T777_012;;;;
