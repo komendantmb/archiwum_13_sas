@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archiwum 13 SAS | Teczka 777</title>
+<style>
+:root{
+  --bg:#0d0b08;--panel:#17120c;--panel2:#21180f;--paper:#f3ead8;--muted:#cbb894;
+  --gold:#b28a3d;--line:#3b2d1f;--red:#8b2b2b;--green:#4d7a45;--blue:#486f91
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at top,#2b2015 0,#0d0b08 48%,#060504 100%);color:var(--paper);font:15px/1.5 Arial,Helvetica,sans-serif}
+header{padding:24px 22px;border-bottom:1px solid var(--line);background:linear-gradient(145deg,rgba(178,138,61,.18),rgba(23,18,12,.96))}
+h1{margin:0;font-size:31px;letter-spacing:.35px}.sub{color:var(--muted);margin-top:8px;max-width:1120px}.quicklinks{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.layout{display:grid;grid-template-columns:390px 1fr;min-height:calc(100vh - 116px)}
+aside{border-right:1px solid var(--line);background:rgba(23,18,12,.96);padding:16px;overflow:auto}.content{padding:18px;overflow:auto}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tab{border:1px solid var(--line);background:var(--panel2);color:var(--paper);padding:8px 10px;border-radius:10px;cursor:pointer}.tab.active{border-color:var(--gold);color:#f3d18a}
+.search{width:100%;padding:11px;border-radius:10px;border:1px solid var(--line);background:#090806;color:var(--paper);margin-bottom:10px}.stats{color:var(--muted);font-size:13px;margin:8px 0 12px}
+.item{border:1px solid var(--line);background:rgba(33,24,15,.96);border-radius:13px;padding:11px;margin:9px 0;cursor:pointer}.item:hover,.item.active{border-color:var(--gold)}
+.code{font-size:12px;color:#f3d18a;font-weight:bold}.title{font-size:15px;margin:4px 0}.meta{font-size:12px;color:var(--muted)}
+.viewer{border:1px solid var(--line);border-radius:16px;background:rgba(23,18,12,.96);padding:18px;min-height:540px}.badge{display:inline-block;border:1px solid var(--gold);color:#f3d18a;padding:4px 8px;border-radius:999px;font-size:12px;margin:0 6px 6px 0}.badge.p{border-color:var(--green);color:#c6efbf}.badge.warn{border-color:var(--red);color:#ffb6b6}.badge.info{border-color:var(--blue);color:#c9e5ff}
+h2{margin:8px 0 10px;color:#f4d28a}.muted{color:var(--muted)}.small{font-size:12px}.btn{display:inline-block;margin:7px 7px 7px 0;padding:10px 12px;border-radius:10px;border:1px solid var(--line);color:#f3d18a;text-decoration:none;background:var(--panel2)}.btn:hover{border-color:var(--gold)}
+table{border-collapse:collapse;width:100%;margin-top:12px}td,th{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:#f4d28a;width:210px}
+.panel{border:1px solid var(--line);background:#100c08;border-radius:12px;padding:12px;margin-top:12px}.missing{border-left:4px solid var(--red);padding:10px 12px;background:#170d0d;color:#ffd1d1;border-radius:8px;margin-top:10px}.ok{border-left:4px solid var(--green);padding:10px 12px;background:#0e170d;color:#d9ffd3;border-radius:8px;margin-top:10px}.info{border-left:4px solid var(--blue);padding:10px 12px;background:#0d1217;color:#d4ecff;border-radius:8px;margin-top:10px}
+iframe{width:100%;height:72vh;border:1px solid var(--line);border-radius:10px;background:#fff}.preview-img{max-width:100%;max-height:78vh;border:1px solid var(--line);border-radius:10px;background:#080604;display:block;margin-top:12px}.pathlist{margin:8px 0 0 18px;color:var(--muted);font-size:12px}.pathlist li{margin:3px 0;word-break:break-all}
+@media(max-width:900px){.layout{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line)}iframe{height:65vh}h1{font-size:25px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Archiwum 13 SAS</h1>
+  <div class="sub">Publiczny punkt wejścia do Teczki 777. Aplikacja ładuje rejestr <b>05_T777/rejestr_t777.csv</b>, filtruje rekordy [P] i otwiera tylko realny nośnik źródłowy. Techniczne karty zastępcze nie są już pokazywane jako dokumenty archiwalne.</div>
+  <div class="quicklinks"><a class="btn" href="https://thirteen-archive-point.base44.app" target="_blank" rel="noopener">Wersja live (Base44)</a></div>
+</header>
+<div class="layout">
+<aside>
+  <div class="tabs" id="tabs"><button class="tab active" data-filter="all">Wszystko</button><button class="tab" data-filter="JAN">Jan</button></div>
+  <input id="search" class="search" placeholder="Szukaj: Jan, WYKOP, Buczacz, Włocławek...">
+  <div class="stats" id="stats">Ładowanie rejestru...</div>
+  <div id="list"></div>
+</aside>
+<main class="content">
+  <section id="viewer" class="viewer"><h2>Ładowanie archiwum...</h2><p class="muted">Otwórz stronę przez GitHub Pages albo Netlify. Goły plik z dysku może blokować ładowanie CSV.</p></section>
+</main>
+</div>
+<script>
+const CSV_PATH='05_T777/rejestr_t777.csv';
+const GH='https://github.com/komendantmb/archiwum_13_sas';
+const RAW='https://raw.githubusercontent.com/komendantmb/archiwum_13_sas/main/';
+const LIVE='https://thirteen-archive-point.base44.app';
+let records=[],filter='all',selectedId=null;
+const list=document.getElementById('list'),viewer=document.getElementById('viewer'),search=document.getElementById('search'),stats=document.getElementById('stats'),tabs=document.getElementById('tabs');
+function esc(v){return String(v||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;')}
+function splitCSVLine(line){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'){if(q&&line[i+1]==='"'){cur+='"';i++}else q=!q;continue}if(c===';'&&!q){out.push(cur);cur='';continue}cur+=c}out.push(cur);return out}
+function parseCSV(txt){const lines=txt.replace(/^\uFEFF/,'').trim().split(/\r?\n/);const head=splitCSVLine(lines.shift()).map(h=>h.trim());return lines.filter(Boolean).map(line=>{const vals=splitCSVLine(line);const o={};head.forEach((h,i)=>o[h]=(vals[i]||'').trim());return o})}
+function normalizeType(t){return (t||'BRAK_TYPU').trim().toUpperCase()}
+function recordTitle(r){return r.OPIS_KRÓTKI||r.TYP||r.ID||'Rekord bez tytułu'}
+function basenameFromRecord(r){const loc=r.LOKALIZACJA_W_ZRODLE||'';let name='';if(loc.includes('=>')) name=loc.split('=>').pop().trim();else if(/\.(pdf|jpg|jpeg|png|webp)$/i.test(loc.trim())) name=loc.trim();return name}
+function mediaKind(name,type){const n=(name||'').toLowerCase();const t=normalizeType(type);if(n.endsWith('.pdf'))return 'pdf';if(/\.(jpg|jpeg|png|webp)$/i.test(n))return 'img';if(t.includes('FOTO')||t.includes('FOTOGRAF')||t.includes('REWERS'))return 'img';return 'unknown'}
+function encodePath(path){return path.split('/').map(encodeURIComponent).join('/')}
+function candidates(r){const name=basenameFromRecord(r);if(!name)return [];const kind=mediaKind(name,r.TYP);const dirs=['01_P','01_P/pdf','01_P/img','media','pdf','img','skany','scans','assets/originals','assets/img','assets/pdf','05_T777'];
+  const out=[];dirs.forEach(d=>out.push(d?`${d}/${name}`:name));
+  if(kind==='pdf'&&!name.toLowerCase().endsWith('.pdf')) out.push(`01_P/pdf/${name}.pdf`);
+  return [...new Set(out)];
+}
+async function exists(path){try{const res=await fetch(encodePath(path),{method:'HEAD',cache:'no-store'});if(res.ok)return encodePath(path)}catch(e){}try{const res=await fetch(RAW+encodePath(path),{method:'HEAD',cache:'no-store'});if(res.ok)return RAW+encodePath(path)}catch(e){}return null}
+async function looksLikeTechnicalCard(url){try{const res=await fetch(url,{cache:'no-store'});if(!res.ok)return false;const buf=await res.arrayBuffer();const txt=new TextDecoder('latin1').decode(buf.slice(0,160000));return /ARCHIWUM 13 SAS\s*-\s*TECHNICAL CARD|technical placeholder|NOT the original archival scan/i.test(txt)}catch(e){return false}}
+async function resolveMedia(r){const cs=candidates(r);for(const p of cs){const hit=await exists(p);if(!hit)continue;const isPdf=/\.pdf$/i.test(p);const tech=isPdf?await looksLikeTechnicalCard(hit):false;if(tech)return {hit:null,path:p,all:cs,technical:true};return {hit,path:p,all:cs,technical:false}}return {hit:null,path:null,all:cs,technical:false}}
+function row(label,value){return `<tr><th>${esc(label)}</th><td>${value?esc(value):'<span class="muted">brak</span>'}</td></tr>`}
+function buildTabs(){const types=[...new Set(records.map(r=>normalizeType(r.TYP)))].filter(Boolean).sort();types.forEach(t=>{const b=document.createElement('button');b.className='tab';b.dataset.filter=t;b.textContent=t.replaceAll('_',' ');b.onclick=()=>setFilter(t,b);tabs.appendChild(b)})}
+function setFilter(f,b){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=f;renderList()}
+function filteredRecords(){const q=search.value.toLowerCase();return records.filter(r=>{const t=normalizeType(r.TYP);const all=Object.values(r).join(' ').toLowerCase();if(filter==='JAN' && (r.CZY_DOTYCZY_BEZPOSREDNIO_JANA||'').toUpperCase()!=='TAK')return false;if(filter!=='all'&&filter!=='JAN'&&t!==filter)return false;return all.includes(q)})}
+function renderList(){const data=filteredRecords();stats.textContent=`Pokazuję ${data.length} z ${records.length} rekordów T777`;list.innerHTML='';data.forEach(r=>{const el=document.createElement('div');el.className='item'+(selectedId===r.ID?' active':'');el.innerHTML=`<div class="code">${esc(r.ID||'BRAK_ID')} · ${esc(normalizeType(r.TYP))}</div><div class="title">${esc(recordTitle(r))}</div><div class="meta">${esc(r.DATA_ISO||'bez daty')} · ${esc(r.MIEJSCE||'bez miejsca')} · ${esc(r.STATUS_DOWODOWY||'bez statusu')}</div>`;el.onclick=()=>openRecord(r);list.appendChild(el)});if(data.length&&!selectedId)openRecord(data[0],false)}
+async function openRecord(r,rerender=true){selectedId=r.ID;if(rerender)renderList();const isP=(r.STATUS_DOWODOWY||'').includes('[P]');const name=basenameFromRecord(r);const kind=mediaKind(name,r.TYP);viewer.innerHTML=`<span class="badge">${esc(r.ID)}</span><span class="badge info">${esc(normalizeType(r.TYP))}</span><span class="badge ${isP?'p':'warn'}">${esc(r.STATUS_DOWODOWY||'BRAK STATUSU')}</span><h2>${esc(recordTitle(r))}</h2><p class="muted">${esc(r.UWAGA_METODOLOGICZNA||'Rekord rejestru T777. Interpretację prowadzić z separacją [P]/[W]/[H].')}</p><table>${row('Data ISO',r.DATA_ISO)}${row('Miejsce',r.MIEJSCE)}${row('Powiązania',r.POWIĄZANIA)}${row('Lokalizacja w źródle',r.LOKALIZACJA_W_ZRODLE)}${row('Cytat minimalny',r.CYTAT_MINIMALNY)}${row('Dotyczy bezpośrednio Jana',r.CZY_DOTYCZY_BEZPOSREDNIO_JANA)}</table><div class="panel"><b>Podgląd nośnika</b><div id="mediaBox" class="info">Szukam realnego pliku źródłowego w repozytorium...</div></div><p><a class="btn" href="${CSV_PATH}" target="_blank">Otwórz rejestr CSV</a><a class="btn" href="${GH}" target="_blank">Repo GitHub</a><a class="btn" href="${LIVE}" target="_blank" rel="noopener">Wersja live</a></p>`;
+const mediaBox=document.getElementById('mediaBox');
+if(!name){mediaBox.className='missing';mediaBox.innerHTML='Ten rekord nie ma jeszcze wpisanej ścieżki do skanu/PDF w kolumnie LOKALIZACJA_W_ZRODLE. Rekord jest w rejestrze, ale nie da się automatycznie otworzyć nośnika.';return}
+const res=await resolveMedia(r);
+const tried=res.all.map(p=>`<li>${esc(p)}</li>`).join('');
+if(res.hit){const open=`<p><a class="btn" href="${res.hit}" target="_blank">Otwórz w nowej karcie</a><a class="btn" href="${RAW+encodePath(res.path)}" target="_blank">RAW GitHub</a></p><div class="ok">Znaleziono realny plik: <b>${esc(res.path)}</b></div>`;if(kind==='img'){mediaBox.className='';mediaBox.innerHTML=open+`<img class="preview-img" src="${res.hit}" alt="${esc(recordTitle(r))}">`}else if(kind==='pdf'){mediaBox.className='';mediaBox.innerHTML=open+`<iframe src="${res.hit}" title="${esc(recordTitle(r))}"></iframe>`}else{mediaBox.className='';mediaBox.innerHTML=open+`<p class="muted">Typ pliku nie jest jednoznaczny. Użyj przycisku otwarcia.</p>`}}
+else{mediaBox.className='missing';mediaBox.innerHTML=`${res.technical?'W repo znaleziono tylko techniczną kartę zastępczą, a nie oryginalny skan/PDF.':'Nie znaleziono pliku binarnego.'} Szukany nośnik: <b>${esc(name)}</b>.<br><br>Żeby ten rekord działał naprawdę, wgraj oryginał pod jedną z tych ścieżek:<ul class="pathlist">${tried}</ul><p class="small">Najbezpieczniej: PDF-y źródłowe do <b>01_P/pdf/</b>, zdjęcia do <b>01_P/img/</b>, z nazwą identyczną jak po znaku <b>=&gt;</b> w rejestrze T777. Techniczne placeholdery w <b>assets/pdf/</b> nie są już traktowane jako źródło.</p>`}
+}
+async function boot(){try{let res=await fetch(CSV_PATH,{cache:'no-store'});if(!res.ok)res=await fetch(RAW+CSV_PATH,{cache:'no-store'});if(!res.ok)throw new Error('CSV HTTP '+res.status);const txt=await res.text();records=parseCSV(txt);buildTabs();renderList();if(records[0])openRecord(records[0],false)}catch(e){viewer.innerHTML='<h2>Nie udało się załadować CSV</h2><p class="muted">Uruchom stronę przez Netlify, GitHub Pages albo lokalny serwer. Bez serwera przeglądarka może blokować fetch do CSV.</p><div class="missing">Błąd: '+esc(e.message)+'</div>';stats.textContent='CSV niezaładowany'}}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>setFilter(b.dataset.filter,b));search.oninput=()=>{selectedId=null;renderList()};boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+ID_T777;ID_PDF;PLIK_PDF;WARSTWA;STATUS_PODPIECIA;ROLA_DOWODOWA;UWAGA_METODOLOGICZNA
+T777_001;PDF_010;split_Dokumenty_Baczyńscy_-2_1-49.pdf;P;podpiety_lokalnie;wczesny blok dokumentow Jana / do dalszego odczytu;wymaga wskazania strony i cytatu minimalnego
+T777_002;PDF_010;split_Dokumenty_Baczyńscy_-2_1-49.pdf;P;podpiety_lokalnie;blok wojskowy / rozkaz / sluzba;wymaga strony i potwierdzenia tresci
+T777_003;PDF_002;Dyplomy cz.2.pdf;P;podpiety_lokalnie;dyplomy i potwierdzenia osobowe;wymaga strony i opisu konkretnego dyplomu
+T777_004;PDF_016;Zdjecia$asFamily)Baczynski_1-49.pdf;P;podpiety_lokalnie;material fotograficzny / rewersy;wymaga rozbicia na pojedyncze obrazy
+T777_005;PDF_001;Dokumenty Baczyńscy _191-286.pdf;P;podpiety_lokalnie;duzy pakiet dokumentow osobowych i archiwalnych;wymaga segmentacji stron
+T777_006;PDF_001;Dokumenty Baczyńscy _191-286.pdf;P;podpiety_lokalnie;akt zgonu / wezel 12.05.1982;wymaga strony, odpisu i porownania z USC
+T777_007;PDF_005;kwi 19 Dokument 35.pdf;P;podpiety_lokalnie;blok Solidarnosc / 3.12.1980;potwierdzony jako wezel, ale wymaga transkrypcji i stron
+T777_008;PDF_005;kwi 19 Dokument 35.pdf;P;podpiety_lokalnie_niepewny;notatka/delegacja 1971 lub material zakladowy;nie zamykac jako A bez strony
+T777_009;PDF_005;kwi 19 Dokument 35.pdf;P;podpiety_lokalnie_niepewny;wniosek samochodowy 1975;nie zamykac jako A bez strony
+T777_010;PDF_005;kwi 19 Dokument 35.pdf;P;podpiety_lokalnie_niepewny;wniosek samochodowy 1976;nie zamykac jako A bez strony
+T777_024;PDF_004;GW_1978_Wyd.AB_0039.pdf;P/I_prasa;podpiety_lokalnie;Jan Baczyński jako przewodniczacy Wojewodzkiej Komisji Rewizyjnej PZPR;pewny nosnik prasowy, cytat i strona wymagaja finalnego zapisu
+T777_027;PDF_003;Dyplomy do🪦.pdf;P;podpiety_lokalnie;blok AGH / podziekowanie / dyplomy;wymaga wskazania konkretnej karty
+T777_028-036;PDF_016;Zdjecia$asFamily)Baczynski_1-49.pdf;P_ikonografia;podpiety_lokalnie;pakiet fotograficzny;wymaga rozbicia na JPG i miniatury
+T777_028-036;PDF_017;Zdjęcia_Ród_Baczński_SaS_50-99-2.pdf;P_ikonografia;podpiety_lokalnie;pakiet fotograficzny;wymaga rozbicia na JPG i miniatury
+T777_028-036;PDF_018;Zdjęcia_Ród_Baczński_SaS_100-149-2.pdf;P_ikonografia;podpiety_lokalnie;pakiet fotograficzny;wymaga rozbicia na JPG i miniatury
+T777_028-036;PDF_019;Zdjęcia_Ród_Baczński_SaS_150-199-2.pdf;P_ikonografia;podpiety_lokalnie;pakiet fotograficzny;wymaga rozbicia na JPG i miniatury
+T777_028-036;PDF_020;Zdjęcia_Ród_Baczński_SaS_250-299-2.pdf;P_ikonografia;podpiety_lokalnie;pakiet fotograficzny;wymaga rozbicia na JPG i miniatury
+T777_028-036;PDF_021;Zdjęcia_Ród_Baczński_SaS_300-349-2.pdf;P_ikonografia;podpiety_lokalnie;pakiet fotograficzny;wymaga rozbicia na JPG i miniatury
