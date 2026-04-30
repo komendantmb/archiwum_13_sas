@@ -7,9 +7,11 @@ Status: automatyczna walidacja struktury Archiwum 13 SAS. Repozytorium jest trak
 Repozytorium robocze Archiwum 13 SAS.
 
 ## Publiczne wejścia
+- [Publiczny front Base44](https://tunneling-baczynski-vault-core.base44.app)
 - [Publiczna aplikacja GitHub Pages](https://komendantmb.github.io/archiwum_13_sas/)
 - [Start aplikacji w repo](./index.html)
 - [Wejście przez 07_APP](./07_APP/README.md)
+- [Publiczny front Base44 - opis](./07_APP/BASE44_PUBLICZNY_FRONT.md)
 - [Czytelnia PDF](./07_APP/ARCHIWUM_13_PDF_START.html)
 - [Status działania archiwum](./07_APP/ARCHIWUM_DZIALA_STATUS_2026-04-25.md)
 

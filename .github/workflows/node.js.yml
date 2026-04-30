@@ -1,33 +1,59 @@
-name: Archiwum 13 static validation
+name: Archiwum 13 static archive check
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
+
+permissions:
+  contents: read
 
 jobs:
-  validate:
+  validate-static-archive:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Show archive structure
+      - name: Show repository structure
         run: |
-          echo "ARCHIWUM 13 SAS — static archive validation"
+          echo "ARCHIWUM 13 SAS"
+          echo "Static archive check. No Node.js install. No npm install. No build step."
           find . -maxdepth 3 -type f | sort | head -200
 
-      - name: Check required archive entry files
+      - name: Check core archive files
         run: |
+          echo "Checking core files..."
           test -f README.md
-          test -f 07_APP/ARCHIWUM_13_START.html
+          test -f index.html
           test -f 05_T777/rejestr_t777.csv
+          echo "Core files OK."
 
-      - name: Check CSV manifests exist if present
+      - name: Check optional app files without failing archive
         run: |
-          echo "CSV files:"
-          find . -name "*.csv" -maxdepth 5 -print | sort || true
+          echo "Optional app files:"
+          for file in \
+            07_APP/README.md \
+            07_APP/ARCHIWUM_13_START.html \
+            07_APP/BASE44_PUBLICZNY_FRONT.md \
+            07_APP/CZYTELNIA_PDF_BASE44_2026-04-27.md \
+            07_APP/manifest_pdf_czytelnia_2026-04-27.csv \
+            05_T777/t777_pdf_mapowanie_2026-04-27.csv
+          do
+            if [ -f "$file" ]; then
+              echo "OK: $file"
+            else
+              echo "MISSING OPTIONAL: $file"
+            fi
+          done
+
+      - name: List CSV manifests
+        run: |
+          echo "CSV files found:"
+          find . -maxdepth 5 -name "*.csv" -type f -print | sort || true
 
       - name: Finish
-        run: echo "Validation OK: repository is treated as a static archive, not a Node.js app."
+        run: |
+          echo "Validation OK. Repository is treated as a static archive, not a Node.js app."
